@@ -1,0 +1,2052 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <script>
+    // Safety: if someone lands on /AIQSTUDIO/ (no filename) but the server somehow sent studio.html,
+    // redirect to the cosmos landing page (index.html).
+    (function(){
+      try {
+        var p = location.pathname.replace(/\/+$/, '');
+        // If URL doesn't end in studio.html but this page IS studio.html, redirect to index
+        if (!/studio\.html$/i.test(p) && !/studio$/i.test(p)) {
+          location.replace('index.html');
+        }
+      } catch(_){}
+    })();
+  </script>
+  <meta name="description" content="AIQ Studio — a private AI atelier in Dubai. One Brain, trained on one brand. Every creative discipline — image, video, motion, music, identity, copy, architecture, launch — in one voice." />
+  <meta name="keywords" content="AIQ Studio, private AI, brand intelligence, AI creative studio, generative AI for brands, AI atelier Dubai, AI brain, brand AI" />
+  <meta name="author" content="AIQ Studio" />
+  <meta name="theme-color" content="#0E0A06" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://ghuser03.github.io/AIQSTUDIO/studio.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghuser03.github.io/AIQSTUDIO/studio.html" />
+  <meta property="og:site_name" content="AIQ Studio" />
+  <meta property="og:title" content="AIQ Studio — A private intelligence, for one brand" />
+  <meta property="og:description" content="A private AI atelier in Dubai. One Brain, trained on one brand. Every creative discipline, in one voice." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AIQ Studio" />
+  <meta name="twitter:description" content="A private intelligence, for one brand." />
+  <meta name="twitter:image" content="https://ghuser03.github.io/AIQSTUDIO/og-image.png" />
+  <meta property="og:image" content="https://ghuser03.github.io/AIQSTUDIO/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AIQ Studio — A private intelligence, for one brand" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><radialGradient id='s' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%23fbe5b0'/><stop offset='60%25' stop-color='%23c9a274'/><stop offset='100%25' stop-color='%235a3a14'/></radialGradient></defs><circle cx='32' cy='32' r='30' fill='url(%23s)'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <title>AIQ Studio — A private intelligence, for one brand</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AIQ Studio",
+    "description": "A private AI atelier in Dubai. One Brain, trained on one brand. Every creative discipline in one voice.",
+    "url": "https://aiqstudio.ae/",
+    "logo": "https://aiqstudio.ae/logo.svg",
+    "founder": "AIQ Studio",
+    "foundingDate": "2026",
+    "areaServed": "Worldwide",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Office 1605, Tower A, Opus Building, Business Bay",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "hello@aiqstudio.ae",
+      "telephone": "+971 4 000 0000",
+      "availableLanguage": ["English", "Arabic"]
+    },
+    "sameAs": []
+  }
+  </script>
+<style>
+:root {
+  --plaster:   #F4ECDD;
+  --alabaster: #EFE5D2;
+  --alabaster-2: #E1D5BB;
+  --parchment: #D8C9A7;
+  --stone:     #B3A88F;
+  --champagne: #c4baa2;
+  --bronze-warm: #9c8458;
+  --bronze:      #7c6a4a;
+  --bronze-deep: #4a3525;
+  --verdigris:   #4a5048;
+  --umber-2: #2A1F14;
+  --umber:   #1B130A;
+  --graphite:#3A3936;
+  --ink:     #1F160D;
+  --paper:   #0E0A06;
+
+  --serif: "Instrument Serif", "EB Garamond", "Garamond", serif;
+  --mono:  "DM Sans", ui-sans-serif, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; max-width: 100vw; }
+html { background: var(--paper); -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Page-load fade-in */
+body { animation: aiq-fade-in 800ms ease both; }
+@keyframes aiq-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* Print stylesheet */
+@media print {
+  body { background: #fff; color: #000; }
+  .s-top, .s-hero__canvas, .grain, .s-mobile-toggle, .s-form, .s-visit__map, .scroll-track { display: none !important; }
+  section { padding: 4vh 4vw !important; page-break-inside: avoid; }
+  .s-hero { min-height: auto !important; padding: 4vh 4vw !important; }
+  .s-hero__line, .s-what__title, .s-how__title, .s-work__title, .s-contact__lede h2, .s-visit__title { color: #000 !important; }
+  .s-card__line, .s-step__line, .s-hero__lede { color: #222 !important; }
+}
+
+
+body {
+  font-family: var(--serif);
+  color: var(--plaster);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-size: 16px;
+}
+::selection { background: var(--bronze-warm); color: var(--umber); }
+a { color: inherit; text-decoration: none; }
+
+/* Top bar — wordmark on left; fades out on scroll-down, returns on scroll-up */
+.s-top {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 30;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 36px;
+  background: linear-gradient(to bottom, rgba(14,10,6,0.88), rgba(14,10,6,0));
+  transition: transform 420ms cubic-bezier(0.65,0,0.35,1), padding 320ms ease, background 320ms ease;
+  will-change: transform;
+}
+.s-top.is-condensed {
+  padding: 14px 32px;
+  background: rgba(14,10,6,0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid color-mix(in oklab, var(--bronze) 20%, transparent);
+}
+.s-top.is-hidden { transform: translateY(-110%); }
+.s-wordmark {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.42em;
+  color: var(--plaster);
+}
+.s-nav {
+  display: flex !important; gap: 40px !important;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--plaster) 80%, transparent);
+}
+.s-nav a { position: relative; transition: color 250ms ease; }
+.s-nav a:hover { color: var(--bronze-warm); }
+
+/* Mobile hamburger toggle */
+.s-mobile-toggle {
+  display: none;
+  background: transparent; border: 0; padding: 8px; cursor: pointer;
+  width: 36px; height: 36px;
+  flex-direction: column; justify-content: center; gap: 5px;
+  position: relative; z-index: 31;
+}
+.s-mobile-toggle span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--plaster);
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+body.s-nav-open .s-mobile-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+body.s-nav-open .s-mobile-toggle span:nth-child(2) { opacity: 0; }
+body.s-nav-open .s-mobile-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 880px) {
+  .s-mobile-toggle { display: flex; }
+  /* Mobile nav — slides in vertically, items stack */
+  .s-nav {
+    position: fixed !important;
+    top: 0; right: 0; bottom: 0;
+    width: min(78vw, 320px);
+    background: rgba(14,10,6,0.98) !important;
+    backdrop-filter: blur(16px);
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    padding: 110px 32px 40px !important;
+    transform: translateX(100%);
+    transition: transform 380ms cubic-bezier(0.65,0,0.35,1);
+    z-index: 30;
+    border-left: 1px solid color-mix(in oklab, var(--bronze) 30%, transparent);
+    overflow-y: auto;
+  }
+  .s-nav.is-open { transform: translateX(0); }
+  .s-nav a {
+    font-size: 15px !important;
+    letter-spacing: 0.30em !important;
+    width: 100%;
+    padding: 8px 0 !important;
+    color: var(--plaster) !important;
+    display: block;
+  }
+}
+
+/* Grain overlay */
+.grain {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0 0.04 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.9'/></svg>");
+  background-size: 180px 180px;
+}
+
+/* Sections — equal generous spacing with content offset from gold separator */
+section {
+  position: relative;
+  padding: 20vh 6vw 28vh;
+}
+section > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.s-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  color: var(--bronze-warm);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 1.2s ease, transform 1.2s ease; }
+.reveal.is-on { opacity: 1; transform: none; }
+
+/* HERO — full viewport with 3D Brain canvas as background */
+.s-hero {
+  position: relative;
+  min-height: 90vh;
+  padding: 14vh 6vw 12vh;
+  display: grid;
+  align-items: end;
+  background: radial-gradient(140% 100% at 50% 35%, #14100a 0%, #050402 100%);
+  overflow: hidden;
+}
+.s-hero > * { max-width: 1200px; margin-left: auto; margin-right: auto; width: 100%; }
+.s-hero__canvas { max-width: none !important; margin: 0 !important; }
+.s-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  text-align: left;
+  margin-left: 0;
+}
+.s-hero__line {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(36px, 4.6vw, 72px);
+  line-height: 1.06;
+  letter-spacing: -0.012em;
+  color: var(--plaster);
+  margin: 0;
+  text-wrap: pretty;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+}
+.s-hero__lede {
+  margin-top: 22px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(16px, 1.4vw, 19px);
+  color: color-mix(in oklab, var(--plaster) 80%, transparent);
+  max-width: 48ch;
+  line-height: 1.5;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+}
+.s-hero__canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* WHAT WE DO */
+.s-what {
+  background: var(--paper);
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+  padding: 12vh 6vw 15vh;
+}
+.s-what__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  align-items: end;
+  margin-bottom: 10vh;
+}
+.s-what__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 3.6vw, 56px);
+  line-height: 1.08;
+  margin: 0;
+  letter-spacing: -0.005em;
+  color: var(--plaster);
+}
+.s-what__title em { font-style: italic; color: var(--champagne); }
+.s-what__lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--plaster) 75%, transparent);
+  margin: 0;
+}
+.s-what__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+.s-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.s-card__plate {
+  aspect-ratio: 4 / 5;
+  position: relative;
+  overflow: hidden;
+  background: #15110b;
+  border: 1px solid color-mix(in oklab, var(--bronze) 30%, transparent);
+  background-size: cover;
+  background-position: center;
+}
+/* ===== Principle plates — meaningful 5s animated loops ===== */
+.s-card__plate {
+  aspect-ratio: 4 / 5;
+  position: relative;
+  overflow: hidden;
+  background: #0e0a06;
+  border: 1px solid color-mix(in oklab, var(--bronze) 30%, transparent);
+}
+
+/* === I · PRIVATE — vault: rings close inward toward a sealed core === */
+.s-card__plate--private {
+  background:
+    radial-gradient(80% 60% at 50% 50%, #1f1810 0%, #0b0703 80%);
+}
+.s-plate-private__bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(40% 35% at 50% 50%, rgba(216,178,126,0.40) 0%, rgba(216,178,126,0) 60%);
+  animation: priv-breathe 5s ease-in-out infinite;
+}
+@keyframes priv-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(0.96); }
+  50%      { opacity: 1;    transform: scale(1.08); }
+}
+.s-plate-private__ring {
+  position: absolute; left: 50%; top: 50%;
+  width: 28%; aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1.5px solid var(--bronze-warm);
+  transform: translate(-50%, -50%) scale(3.5);
+  opacity: 0;
+}
+.s-plate-private__ring--1 { animation: priv-close 5s ease-out infinite; }
+.s-plate-private__ring--2 { animation: priv-close 5s ease-out 1.66s infinite; }
+.s-plate-private__ring--3 { animation: priv-close 5s ease-out 3.33s infinite; }
+@keyframes priv-close {
+  0%   { transform: translate(-50%, -50%) scale(3.6); opacity: 0;
+         border-color: rgba(196,186,162,0.10); border-width: 0.5px; }
+  18%  { opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(0.45); opacity: 0;
+         border-color: rgba(244,228,192,1); border-width: 2.4px; }
+}
+.s-plate-private__core {
+  position: absolute; left: 50%; top: 50%;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #f4e4c0;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 28px rgba(244,228,192,1),
+    0 0 80px rgba(216,178,126,0.85);
+  z-index: 2;
+  animation: priv-core 5s ease-in-out infinite;
+}
+@keyframes priv-core {
+  0%, 100% { transform: translate(-50%, -50%) scale(0.85);
+             box-shadow: 0 0 22px rgba(244,228,192,0.85), 0 0 50px rgba(216,178,126,0.6); }
+  50%      { transform: translate(-50%, -50%) scale(1.20);
+             box-shadow: 0 0 38px rgba(244,228,192,1),    0 0 100px rgba(216,178,126,1); }
+}
+
+/* === II · TOTAL — colorful spectrum spinning into a single point === */
+.s-card__plate--total {
+  background:
+    radial-gradient(60% 60% at 50% 50%, rgba(20,14,8,0) 35%, rgba(10,7,4,0.92) 100%),
+    linear-gradient(180deg, #0e0a06, #060403);
+}
+.s-card__plate--total > .s-card__plate-spin {
+  position: absolute;
+  inset: -12%;
+  background: conic-gradient(from 0deg at 50% 50%,
+    rgba(74,80,72,0.65) 0deg,
+    rgba(156,132,88,0.85) 60deg,
+    rgba(216,178,126,0.95) 120deg,
+    rgba(196,186,162,0.85) 180deg,
+    rgba(124,106,74,0.70) 240deg,
+    rgba(74,80,72,0.65) 300deg,
+    rgba(74,80,72,0.65) 360deg);
+  animation: total-rotate 12s linear infinite;
+  z-index: 0;
+}
+@keyframes total-rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.s-card__plate--total::after {
+  content: "";
+  position: absolute; left: 50%; top: 50%;
+  width: 18px; height: 18px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #f4e4c0;
+  box-shadow:
+    0 0 28px rgba(244,228,192,1),
+    0 0 80px rgba(216,178,126,0.85);
+  z-index: 2;
+}
+
+/* === III · COMPOUNDING — fixed concentric layers; light wave moves inward; core brightens === */
+.s-card__plate--compounding {
+  background:
+    radial-gradient(60% 50% at 50% 50%, #1f1810 0%, #0b0703 80%);
+}
+.s-plate-comp__source {
+  position: absolute; left: 50%; top: 50%;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #f4e4c0;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 28px rgba(244,228,192,1),
+    0 0 80px rgba(216,178,126,0.9);
+  z-index: 3;
+  animation: comp-core 5s ease-in-out infinite;
+}
+@keyframes comp-core {
+  0%, 50%, 100% { transform: translate(-50%, -50%) scale(0.85);
+                  box-shadow: 0 0 22px rgba(244,228,192,0.85), 0 0 50px rgba(216,178,126,0.6); }
+  72%           { transform: translate(-50%, -50%) scale(1.30);
+                  box-shadow: 0 0 40px rgba(244,228,192,1),    0 0 120px rgba(216,178,126,1); }
+}
+.s-plate-comp__ring {
+  position: absolute; left: 50%; top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.s-plate-comp__ring--1 { width: 30%; aspect-ratio: 1; border: 1.5px solid var(--bronze-warm); animation: comp-flash 5s ease-out 3s infinite; }
+.s-plate-comp__ring--2 { width: 50%; aspect-ratio: 1; border: 1.5px solid var(--bronze-warm); animation: comp-flash 5s ease-out 2s infinite; }
+.s-plate-comp__ring--3 { width: 70%; aspect-ratio: 1; border: 1.5px solid var(--bronze-warm); animation: comp-flash 5s ease-out 1s infinite; }
+.s-plate-comp__ring--4 { width: 90%; aspect-ratio: 1; border: 1.5px solid var(--bronze-warm); animation: comp-flash 5s ease-out 0s infinite; }
+@keyframes comp-flash {
+  0%, 100% { opacity: 0.35; border-color: rgba(124,106,74,0.45); border-width: 1px; }
+  6%       { opacity: 1;    border-color: rgba(244,228,192,1);   border-width: 2.6px; }
+  40%      { opacity: 0.55; border-color: rgba(196,186,162,0.55); border-width: 1.4px; }
+}
+
+/* Pause everything on hover */
+.s-card:hover .s-card__plate--private *,
+.s-card:hover .s-card__plate--total > .s-card__plate-spin,
+.s-card:hover .s-card__plate--compounding * {
+  animation-play-state: paused;
+}
+.s-card__plate-inner {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+}
+.s-card__plate-inner svg {
+  width: 56%; height: 56%;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 24px rgba(216,178,126,0.18));
+}
+.s-card__num {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  color: var(--bronze-warm);
+  text-transform: uppercase;
+}
+.s-card__head {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(22px, 1.8vw, 28px);
+  line-height: 1.2;
+  color: var(--plaster);
+  margin: 0;
+}
+.s-card__line {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--plaster) 78%, transparent);
+  margin: 0;
+}
+
+/* HOW IT WORKS */
+.s-how {
+  background: linear-gradient(180deg, var(--paper) 0%, #110d08 100%);
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+  padding: 12vh 6vw 15vh;
+}
+.s-how__head { display: flex; justify-content: space-between; align-items: end; gap: 4vw; margin-bottom: 10vh; }
+.s-how__title { font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 3.8vw, 60px); margin: 0; color: var(--plaster); letter-spacing: -0.008em; }
+.s-how__title em { font-style: italic; color: var(--champagne); }
+.s-how__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vw;
+  position: relative;
+}
+.s-how__steps::before {
+  content: "";
+  position: absolute;
+  left: 4%; right: 4%; top: 38px;
+  height: 1px;
+  background: linear-gradient(to right,
+    color-mix(in oklab, var(--bronze) 0%, transparent),
+    color-mix(in oklab, var(--bronze) 60%, transparent),
+    color-mix(in oklab, var(--bronze) 0%, transparent));
+}
+.s-step { position: relative; padding-top: 70px; }
+.s-step__dot {
+  position: absolute; top: 28px; left: 0;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--paper);
+  border: 1px solid var(--bronze-warm);
+}
+.s-step__dot::after {
+  content: ""; position: absolute; inset: 4px; border-radius: 50%;
+  background: var(--bronze-warm);
+}
+.s-step__num { font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.40em; color: var(--bronze-warm); margin-bottom: 12px; text-transform: uppercase;}
+.s-step__title { font-family: var(--serif); font-weight: 400; font-style: italic; font-size: clamp(22px, 1.9vw, 30px); margin: 0 0 14px; color: var(--plaster); }
+.s-step__line { font-family: var(--serif); font-size: 17px; line-height: 1.55; color: color-mix(in oklab, var(--plaster) 78%, transparent); margin: 0; }
+
+/* WORK */
+.s-work {
+  background: var(--paper);
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+  padding: 12vh 6vw 15vh;
+}
+.s-work__head { display: flex; justify-content: space-between; align-items: end; gap: 4vw; margin-bottom: 8vh; }
+.s-work__title { font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 3.8vw, 60px); margin: 0; color: var(--plaster); letter-spacing: -0.008em; }
+.s-work__title em { font-style: italic; color: var(--champagne); }
+.s-work__lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  color: color-mix(in oklab, var(--plaster) 72%, transparent);
+  max-width: 38ch;
+}
+.s-work__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+.s-work__item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: #15110b;
+  border: 1px solid color-mix(in oklab, var(--bronze) 22%, transparent);
+}
+.s-work__item--1 { grid-column: span 7; aspect-ratio: 7 / 5; }
+.s-work__item--2 { grid-column: span 5; aspect-ratio: 5 / 5; }
+.s-work__item--3 { grid-column: span 4; aspect-ratio: 4 / 5; }
+.s-work__item--4 { grid-column: span 5; aspect-ratio: 5 / 5; }
+.s-work__item--5 { grid-column: span 3; aspect-ratio: 3 / 5; }
+
+.s-work__bg {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.75) contrast(1.05) saturate(0.9);
+  transition: transform 1.6s cubic-bezier(0.25,0.46,0.45,0.94), filter 600ms ease;
+  transform: scale(1.04);
+}
+.s-work__item:hover .s-work__bg { transform: scale(1.10); filter: brightness(0.9); }
+.s-work__bg::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(11,8,4,0.7) 100%);
+}
+.s-work__label {
+  position: absolute; left: 18px; bottom: 16px; right: 18px;
+  display: flex; justify-content: space-between; align-items: end;
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.34em; text-transform: uppercase;
+  color: var(--plaster);
+  z-index: 2;
+}
+.s-work__label__year { color: var(--bronze-warm); }
+.s-work__invite {
+  margin-top: 4vh;
+  padding: 2vh 0 0;
+  text-align: center;
+}
+.s-work__invite-line {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(20px, 2vw, 28px);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--plaster);
+  max-width: 56ch;
+  margin: 0 auto;
+}
+.s-work__invite-line a {
+  color: var(--bronze-warm);
+  border-bottom: 1px solid color-mix(in oklab, var(--bronze-warm) 50%, transparent);
+  transition: color 250ms ease, border-color 250ms ease;
+}
+.s-work__invite-line a:hover {
+  color: var(--champagne);
+  border-color: var(--champagne);
+}
+
+.s-work__close {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: color-mix(in oklab, var(--plaster) 70%, transparent);
+  margin-top: 4vh;
+  text-align: center;
+}
+
+/* CONTACT */
+.s-contact {
+  background: linear-gradient(180deg, #110d08 0%, #060403 100%);
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+  padding: 12vh 6vw 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+}
+.s-contact__lede h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(38px, 4.6vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.012em;
+  margin: 0 0 28px;
+  color: var(--plaster);
+}
+.s-contact__lede h2 em { font-style: italic; color: var(--champagne); }
+.s-contact__lede__sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--plaster) 78%, transparent);
+  margin: 0 0 40px;
+  max-width: 40ch;
+}
+.s-contact__info {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.9;
+  color: var(--plaster);
+}
+.s-contact__info div { display: flex; gap: 18px; }
+.s-contact__info .k { font-size: 10px; font-weight: 500; letter-spacing: 0.36em; color: var(--bronze-warm); width: 80px; padding-top: 4px; text-transform: uppercase; }
+.s-contact__info .v { font-family: var(--serif); font-size: 17px; letter-spacing: 0; }
+
+.s-form { display: flex; flex-direction: column; gap: 28px; }
+.s-form__field { display: flex; flex-direction: column; gap: 8px; }
+.s-form__label {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.40em;
+  color: var(--bronze-warm);
+  text-transform: uppercase;
+}
+.s-form__input, .s-form__textarea, .s-form select.s-form__input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid color-mix(in oklab, var(--plaster) 25%, transparent);
+  padding: 12px 0;
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--plaster);
+  outline: none;
+  transition: border-color 300ms ease;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  width: 100%;
+  min-height: 44px;
+}
+.s-form__input:focus, .s-form__textarea:focus { border-color: var(--bronze-warm); }
+.s-form__textarea { resize: none; min-height: 96px; }
+.s-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+@media (max-width: 720px) { .s-form__row { grid-template-columns: 1fr; gap: 28px; } }
+.s-form__opt {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: color-mix(in oklab, var(--plaster) 45%, transparent);
+  text-transform: uppercase;
+}
+.s-form__checks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 18px;
+  padding: 6px 0;
+}
+@media (max-width: 720px) { .s-form__checks { grid-template-columns: repeat(2, 1fr); } }
+.s-form__checks label {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--serif);
+  font-size: 16px;
+  color: color-mix(in oklab, var(--plaster) 85%, transparent);
+  cursor: pointer;
+}
+.s-form__checks input[type="checkbox"] {
+  appearance: none;
+  width: 14px; height: 14px;
+  border: 1px solid color-mix(in oklab, var(--bronze-warm) 60%, transparent);
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.s-form__checks input[type="checkbox"]:checked {
+  background: var(--bronze-warm);
+  border-color: var(--bronze-warm);
+}
+.s-form__consent {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--plaster) 70%, transparent);
+  max-width: 56ch;
+}
+.s-form__consent input[type="checkbox"] {
+  appearance: none;
+  width: 14px; height: 14px;
+  border: 1px solid color-mix(in oklab, var(--bronze-warm) 60%, transparent);
+  background: transparent;
+  cursor: pointer;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+.s-form__consent input[type="checkbox"]:checked {
+  background: var(--bronze-warm);
+  border-color: var(--bronze-warm);
+}
+.s-form__status {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--bronze-warm);
+  text-transform: uppercase;
+  margin: 0;
+  min-height: 14px;
+}
+.s-form select.s-form__input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--bronze-warm) 50%),
+                    linear-gradient(135deg, var(--bronze-warm) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 26px, calc(100% - 8px) 26px;
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 32px;
+  cursor: pointer;
+  color: var(--plaster);
+}
+.s-visit {
+  background: linear-gradient(180deg, #060403 0%, #0e0a06 100%);
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+  padding: 12vh 6vw 15vh;
+}
+.s-visit > * { max-width: 1200px; margin-left: auto; margin-right: auto; }
+.s-visit__inner {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 6vw;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .s-visit__inner { grid-template-columns: 1fr; gap: 4vh; }
+}
+.s-visit__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(34px, 3.8vw, 60px);
+  line-height: 1.04;
+  margin: 8px 0 24px;
+  letter-spacing: -0.008em;
+  color: var(--plaster);
+}
+.s-visit__title em { font-style: italic; color: var(--champagne); }
+.s-visit__lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--plaster) 78%, transparent);
+  margin: 0 0 28px;
+  max-width: 40ch;
+}
+.s-visit__addr {
+  font-family: var(--serif);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--plaster);
+  margin: 0 0 28px;
+}
+.s-visit__addr strong {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--bronze-warm);
+  display: block;
+  margin-bottom: 6px;
+}
+.s-visit__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.s-visit__cta {
+  padding: 14px 26px;
+  background: var(--bronze-warm);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.40em;
+  text-transform: uppercase;
+  border: 1px solid var(--bronze-warm);
+  transition: background 300ms ease, color 300ms ease;
+}
+.s-visit__cta:hover { background: var(--champagne); border-color: var(--champagne); color: var(--paper); }
+.s-visit__cta--ghost { background: transparent; color: var(--plaster); border-color: color-mix(in oklab, var(--bronze-warm) 60%, transparent); }
+.s-visit__cta--ghost:hover { background: var(--bronze-warm); color: var(--paper); }
+
+.s-visit__map {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #0e0a06;
+  border: 1px solid color-mix(in oklab, var(--bronze-warm) 25%, transparent);
+  overflow: hidden;
+}
+.s-visit__map-svg { width: 100%; height: 100%; display: block; }
+
+.s-form__btn {
+  align-self: flex-start;
+  padding: 16px 32px;
+  background: transparent;
+  color: var(--plaster);
+  border: 1px solid var(--bronze-warm);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 300ms ease, color 300ms ease;
+}
+.s-form__btn:hover { background: var(--bronze-warm); color: var(--umber); }
+
+/* Footer */
+.s-footer {
+  padding: 10vh 6vw 7vh;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 4vw;
+  align-items: start;
+  border-top: 1px solid color-mix(in oklab, var(--bronze) 25%, transparent);
+}
+.s-footer__col { display: flex; flex-direction: column; gap: 4px; }
+.s-footer__col--meta { align-items: flex-end; text-align: right; }
+.s-footer__brand {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.42em;
+  color: var(--plaster);
+  margin-bottom: 8px;
+}
+.s-footer__tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: color-mix(in oklab, var(--plaster) 70%, transparent);
+  max-width: 28ch;
+  line-height: 1.5;
+}
+.s-footer__lbl {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.40em;
+  color: var(--bronze-warm);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.s-footer__val {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.7;
+  color: color-mix(in oklab, var(--plaster) 82%, transparent);
+}
+.s-footer__val--small { font-size: 12px; color: color-mix(in oklab, var(--plaster) 60%, transparent); }
+
+@media (max-width: 880px) {
+  .s-footer { grid-template-columns: 1fr 1fr; gap: 6vh 4vw; }
+  .s-footer__col--meta { align-items: flex-start; text-align: left; grid-column: 1 / -1; }
+}
+
+@media (max-width: 880px) {
+  section { padding: 14vh 5vw; }
+  .s-hero { padding: 16vh 5vw 12vh; }
+  .s-visit { padding: 14vh 5vw; }
+  .s-footer { padding: 8vh 5vw 6vh; }
+  .s-what__head { grid-template-columns: 1fr; gap: 4vh; }
+  .s-what__grid { grid-template-columns: 1fr; gap: 6vh; }
+  .s-how__steps { grid-template-columns: 1fr; gap: 6vh; }
+  .s-how__steps::before { display: none; }
+  .s-work__grid { grid-template-columns: 1fr; }
+  .s-work__item { grid-column: 1 / -1 !important; aspect-ratio: 4 / 3 !important; }
+  .s-contact { grid-template-columns: 1fr; gap: 6vh; }
+  .s-hero__line { font-size: clamp(30px, 8vw, 56px); }
+  .s-visit__inner { grid-template-columns: 1fr; gap: 4vh; }
+  .s-visit__map { max-height: 60vh; }
+  .s-top { padding: 16px 20px; }
+  .s-wordmark { font-size: 14px; letter-spacing: 0.30em; }
+  /* mobile nav: panel rule above defines the slide-in; no overrides here */
+  .s-hero { padding: 16vh 6vw 12vh; }
+  .s-hero__inner { max-width: 100%; }
+  .s-hero__canvas { opacity: 0.55; }
+  .s-hero__lede { font-size: 16px; }
+  .s-card__head { font-size: clamp(20px, 4.4vw, 24px); }
+  .s-card__line { font-size: 15px; }
+  .s-how__title, .s-work__title, .s-contact__lede h2, .s-visit__title { font-size: clamp(28px, 7vw, 44px); }
+  .s-form__row { grid-template-columns: 1fr; gap: 22px; }
+  .s-form__checks { grid-template-columns: repeat(2, 1fr); }
+  .s-form__input, .s-form__textarea { font-size: 17px; }
+}
+@media (max-width: 480px) {
+  section { padding: 10vh 5vw; }
+  .s-hero { padding: 14vh 5vw 10vh; min-height: 90vh; }
+  .s-hero__line { font-size: clamp(26px, 8vw, 42px); }
+  .s-hero__lede { font-size: 14px; }
+  .s-card__plate { aspect-ratio: 1 / 1; }
+  .s-num { font-size: 9px; letter-spacing: 0.32em; }
+  .s-nav { font-size: 8px; letter-spacing: 0.18em; gap: 40px !important; }
+  .s-form__btn, .s-visit__cta { font-size: 9px; padding: 14px 22px; }
+  .s-visit__addr { font-size: 16px; }
+  .s-form__checks { grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+}
+@media (hover: none) and (pointer: coarse) {
+  .s-work__item:hover .s-work__bg { transform: scale(1.04); }
+}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<header class="s-top">
+  <a href="index.html" class="s-wordmark">AIQ STUDIO</a>
+  <button class="s-mobile-toggle" id="mobileNavToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="s-nav" id="primaryNav">
+    <a href="index.html">Story</a>
+    <a href="#what">What</a>
+    <a href="#how">How</a>
+    <a href="#work">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="s-hero" id="open">
+  <canvas class="s-hero__canvas" id="heroCanvas"></canvas>
+  <div class="s-hero__inner reveal" data-reveal>
+    <span class="s-num">AIQ STUDIO · DUBAI · 2026</span>
+    <h1 class="s-hero__line">A private intelligence,<br/><em>trained on one brand</em>.</h1>
+    <p class="s-hero__lede">We do not make tools. We make a single, private intelligence — your <em>Brain</em> — and let it produce every creative format your brand will ever need, in one voice.</p>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="s-what" id="what">
+  <div class="s-what__head reveal" data-reveal>
+    <div>
+      <span class="s-num">§ 01 · PRINCIPLES</span>
+      <h2 class="s-what__title">The studio, <em>distilled</em>.</h2>
+    </div>
+    <p class="s-what__lede">Three principles. No exceptions.</p>
+  </div>
+  <div class="s-what__grid">
+    <article class="s-card reveal" data-reveal>
+      <div class="s-card__plate s-card__plate--private">
+        <div class="s-plate-private__bg"></div>
+        <div class="s-plate-private__ring s-plate-private__ring--1"></div>
+        <div class="s-plate-private__ring s-plate-private__ring--2"></div>
+        <div class="s-plate-private__ring s-plate-private__ring--3"></div>
+        <div class="s-plate-private__core"></div>
+      </div>
+      <div class="s-card__num">i · Private</div>
+      <h3 class="s-card__head">A Brain trained on <em>your brand alone</em>.</h3>
+      <p class="s-card__line">Never shared. Never pooled. The system we commission learns only from you, and the work it produces is yours by contract.</p>
+    </article>
+
+    <article class="s-card reveal" data-reveal>
+      <div class="s-card__plate s-card__plate--total"><div class="s-card__plate-spin"></div></div>
+      <div class="s-card__num">ii · Total</div>
+      <h3 class="s-card__head">Every format, in <em>one voice</em>.</h3>
+      <p class="s-card__line">Image, video, motion, music, identity, copy, architecture, launch. Eight disciplines, one Brain — so every output speaks in the same hand.</p>
+    </article>
+
+    <article class="s-card reveal" data-reveal>
+      <div class="s-card__plate s-card__plate--compounding">
+        <div class="s-plate-comp__source"></div>
+        <div class="s-plate-comp__ring s-plate-comp__ring--1"></div>
+        <div class="s-plate-comp__ring s-plate-comp__ring--2"></div>
+        <div class="s-plate-comp__ring s-plate-comp__ring--3"></div>
+        <div class="s-plate-comp__ring s-plate-comp__ring--4"></div>
+      </div>
+      <div class="s-card__num">iii · Compounding</div>
+      <h3 class="s-card__head">It deepens with <em>every use</em>.</h3>
+      <p class="s-card__line">Each brief, each correction, each preference refines the Brain. The longer it works for you, the more precisely it speaks.</p>
+    </article>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="s-how" id="how">
+  <div class="s-how__head reveal" data-reveal>
+    <div>
+      <span class="s-num">§ 02 · METHOD</span>
+      <h2 class="s-how__title">How a Brain is <em>made</em>.</h2>
+    </div>
+    <div style="font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.42em; color: var(--bronze-warm); text-transform: uppercase;">THREE MOVEMENTS</div>
+  </div>
+  <div class="s-how__steps">
+    <article class="s-step reveal" data-reveal>
+      <div class="s-step__dot"></div>
+      <div class="s-step__num">Movement i</div>
+      <h3 class="s-step__title">Seventy-eight questions.</h3>
+      <p class="s-step__line">Not about what you sell — about who left this brand to you, what its enemy is, what season it sounds like. The questions strangers do not ask.</p>
+    </article>
+    <article class="s-step reveal" data-reveal>
+      <div class="s-step__dot"></div>
+      <div class="s-step__num">Movement ii</div>
+      <h3 class="s-step__title">Your private Brain.</h3>
+      <p class="s-step__line">Your answers carve a single intelligence — bespoke, sealed, owned by you. One mind that holds every discipline in your brand's voice.</p>
+    </article>
+    <article class="s-step reveal" data-reveal>
+      <div class="s-step__dot"></div>
+      <div class="s-step__num">Movement iii</div>
+      <h3 class="s-step__title">Everything it makes.</h3>
+      <p class="s-step__line">From a campaign to an identity, a launch film to an architectural study — produced in one voice, deepening with every brief.</p>
+    </article>
+  </div>
+</section>
+
+<!-- INVITATION (replaces portfolio) -->
+<section class="s-work" id="work">
+  <div class="s-work__head reveal" data-reveal>
+    <div>
+      <span class="s-num">§ 03 · PORTFOLIO</span>
+      <h2 class="s-work__title">A private <em>portfolio</em>.</h2>
+    </div>
+    <p class="s-work__lede">We do not publish work. Every output belongs to the brand that commissioned it.</p>
+  </div>
+  <div class="s-work__invite reveal" data-reveal>
+    <p class="s-work__invite-line">
+      Each Brain is private. Each output, owned. To see the work,
+      <a href="#contact">request a private viewing</a> — we open the door in person, in Business Bay.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="s-contact" id="contact">
+  <div class="s-contact__lede reveal" data-reveal>
+    <span class="s-num">§ 04 · CONTACT</span>
+    <h2><em>Step in.</em></h2>
+    <p class="s-contact__lede__sub">Tell us a little. A name, a brand, one short message. We open the door from there.</p>
+    <div class="s-contact__info">
+      <div><span class="k">Email</span><span class="v">hello@aiqstudio.ae</span></div>
+      <div><span class="k">Phone</span><span class="v">+971 4 000 0000</span></div>
+      <div><span class="k">Studio</span><span class="v">Dubai · by appointment</span></div>
+    </div>
+  </div>
+
+  <form class="s-form reveal" data-reveal id="contactForm" novalidate>
+    <div class="s-form__row">
+      <div class="s-form__field">
+        <label class="s-form__label" for="f-name">Full name</label>
+        <input id="f-name" name="name" class="s-form__input" type="text" autocomplete="name" required />
+      </div>
+      <div class="s-form__field">
+        <label class="s-form__label" for="f-company">Company / Brand</label>
+        <input id="f-company" name="company" class="s-form__input" type="text" autocomplete="organization" required />
+      </div>
+    </div>
+    <div class="s-form__row">
+      <div class="s-form__field">
+        <label class="s-form__label" for="f-email">Email</label>
+        <input id="f-email" name="email" class="s-form__input" type="email" autocomplete="email" inputmode="email"
+               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}" required />
+      </div>
+      <div class="s-form__field">
+        <label class="s-form__label" for="f-phone">Phone</label>
+        <input id="f-phone" name="phone" class="s-form__input" type="tel" autocomplete="tel"
+               pattern="[\+]?[0-9\s\-\(\)]{7,20}" required />
+      </div>
+    </div>
+    <div class="s-form__field">
+      <label class="s-form__label" for="f-discipline">Disciplines of interest <span class="s-form__opt">optional</span></label>
+      <div class="s-form__checks">
+        <label><input type="checkbox" name="discipline" value="image"/> Image</label>
+        <label><input type="checkbox" name="discipline" value="video"/> Video</label>
+        <label><input type="checkbox" name="discipline" value="motion"/> Motion</label>
+        <label><input type="checkbox" name="discipline" value="music"/> Music</label>
+        <label><input type="checkbox" name="discipline" value="identity"/> Identity</label>
+        <label><input type="checkbox" name="discipline" value="copy"/> Copy</label>
+        <label><input type="checkbox" name="discipline" value="architecture"/> Architecture</label>
+        <label><input type="checkbox" name="discipline" value="launch"/> Launch</label>
+      </div>
+    </div>
+    <div class="s-form__field">
+      <label class="s-form__label" for="f-msg">A short message</label>
+      <textarea id="f-msg" name="message" class="s-form__textarea" rows="4" required></textarea>
+    </div>
+    <label class="s-form__consent">
+      <input type="checkbox" id="f-consent" required />
+      <span>I consent to AIQ Studio contacting me about my enquiry. Information is handled under our private-by-default policy.</span>
+    </label>
+    <button class="s-form__btn" type="submit">Send enquiry →</button>
+    <p class="s-form__status" id="formStatus" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- ADDRESS / VISIT -->
+<section class="s-visit" id="visit">
+  <div class="s-visit__inner">
+    <div class="s-visit__copy reveal" data-reveal>
+      <span class="s-num">§ 05 · VISIT</span>
+      <h2 class="s-visit__title">Find us in <em>Business Bay</em>.</h2>
+      <p class="s-visit__lede">The studio is by appointment.</p>
+      <address class="s-visit__addr">
+        <strong>AIQ Studio</strong><br/>
+        Office 1605, Tower A<br/>
+        Opus Building, Business Bay<br/>
+        Dubai, United Arab Emirates
+      </address>
+      <div class="s-visit__actions">
+        <a class="s-visit__cta" href="https://maps.google.com/?q=Opus+Building+Business+Bay+Dubai" target="_blank" rel="noopener">Open in Maps →</a>
+        <a class="s-visit__cta s-visit__cta--ghost" href="#contact">Request appointment</a>
+      </div>
+    </div>
+    <div class="s-visit__map reveal" data-reveal aria-label="Map showing AIQ Studio, Opus Building, Business Bay, Dubai">
+      <svg class="s-visit__map-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9c8458" stop-opacity="0.30"/>
+            <stop offset="60%" stop-color="#7c6a4a" stop-opacity="0.10"/>
+            <stop offset="100%" stop-color="#1a120a" stop-opacity="0"/>
+          </radialGradient>
+          <pattern id="mapGrid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M60 0 L0 0 0 60" fill="none" stroke="#9c8458" stroke-width="0.4" opacity="0.06"/>
+          </pattern>
+          <linearGradient id="bkGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d8c79e"/>
+            <stop offset="50%" stop-color="#a89066"/>
+            <stop offset="100%" stop-color="#5c4222"/>
+          </linearGradient>
+          <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#2a3a3a" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#4a6066" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#2a3a3a" stop-opacity="0.6"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="600" fill="#0a0703"/>
+        <rect width="600" height="600" fill="url(#mapGrid)"/>
+        <circle cx="300" cy="320" r="260" fill="url(#mapGlow)"/>
+
+        <!-- Dubai Water Canal — flowing through Business Bay -->
+        <path d="M -20 220 Q 100 240 200 280 Q 290 320 340 340 Q 410 380 500 410 Q 560 430 620 440"
+              fill="none" stroke="url(#waterGrad)" stroke-width="32" stroke-linecap="round"/>
+        <path d="M -20 220 Q 100 240 200 280 Q 290 320 340 340 Q 410 380 500 410 Q 560 430 620 440"
+              fill="none" stroke="#7c9098" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
+
+        <!-- Sheikh Zayed Road (E11) — major artery -->
+        <path d="M -20 90 L 620 50" stroke="#16100a" stroke-width="16" opacity="0.9"/>
+        <path d="M -20 90 L 620 50" stroke="#c4baa2" stroke-width="3.5" opacity="0.55"/>
+        <path d="M -20 93 L 620 53" stroke="#9c8458" stroke-width="0.6" opacity="0.8" stroke-dasharray="6 6"/>
+
+        <!-- Al Khail Road (E44) -->
+        <path d="M -20 555 L 620 525" stroke="#16100a" stroke-width="9" opacity="0.65"/>
+        <path d="M -20 555 L 620 525" stroke="#c4baa2" stroke-width="1.8" opacity="0.45"/>
+
+        <!-- Marasi Drive — inner Business Bay loop -->
+        <path d="M 200 470 Q 280 380 360 370 Q 430 360 480 290" stroke="#7c6a4a" stroke-width="1.5" opacity="0.45" fill="none"/>
+
+        <!-- Cross streets -->
+        <g stroke="#7c6a4a" stroke-width="0.7" opacity="0.28" fill="none">
+          <path d="M 130 0 L 130 600"/>
+          <path d="M 240 0 L 240 600"/>
+          <path d="M 380 0 L 380 600"/>
+          <path d="M 510 0 L 510 600"/>
+          <path d="M 0 180 L 600 180"/>
+          <path d="M 0 380 L 600 380"/>
+          <path d="M 0 470 L 600 470"/>
+        </g>
+
+        <!-- City blocks — Business Bay towers, varied + refined -->
+        <g fill="#7c6a4a" opacity="0.18">
+          <rect x="140" y="160" width="18" height="44"/>
+          <rect x="166" y="150" width="14" height="54"/>
+          <rect x="186" y="170" width="22" height="34"/>
+          <rect x="214" y="148" width="16" height="56"/>
+          <rect x="236" y="166" width="14" height="38"/>
+          <rect x="258" y="142" width="20" height="62"/>
+          <rect x="286" y="160" width="14" height="44"/>
+          <rect x="306" y="170" width="18" height="34"/>
+          <rect x="148" y="240" width="20" height="48"/>
+          <rect x="174" y="226" width="14" height="62"/>
+          <rect x="194" y="248" width="18" height="40"/>
+          <rect x="220" y="232" width="16" height="56"/>
+          <rect x="246" y="252" width="14" height="36"/>
+          <rect x="396" y="160" width="16" height="44"/>
+          <rect x="418" y="145" width="20" height="59"/>
+          <rect x="444" y="166" width="14" height="38"/>
+          <rect x="464" y="152" width="18" height="52"/>
+          <rect x="488" y="170" width="14" height="34"/>
+          <rect x="406" y="280" width="22" height="58"/>
+          <rect x="434" y="266" width="16" height="72"/>
+          <rect x="456" y="284" width="20" height="54"/>
+          <rect x="482" y="270" width="14" height="68"/>
+        </g>
+        <!-- Building tops highlight -->
+        <g fill="#c4baa2" opacity="0.15">
+          <rect x="140" y="160" width="18" height="2"/>
+          <rect x="166" y="150" width="14" height="2"/>
+          <rect x="214" y="148" width="16" height="2"/>
+          <rect x="258" y="142" width="20" height="2"/>
+          <rect x="418" y="145" width="20" height="2"/>
+          <rect x="464" y="152" width="18" height="2"/>
+        </g>
+
+        <!-- ========= BURJ KHALIFA — proper detailed silhouette sticker ========= -->
+        <g transform="translate(95, 200)">
+          <!-- Outer halo -->
+          <ellipse cx="0" cy="78" rx="32" ry="6" fill="#d8b27e" opacity="0.10"/>
+          <!-- Tiered spire from base to tip (real Y-shape massing, abstracted) -->
+          <g fill="url(#bkGrad)" stroke="#3a2812" stroke-width="0.4">
+            <!-- Base podium -->
+            <path d="M -20 78 L -20 60 L 20 60 L 20 78 Z"/>
+            <!-- Three wings of the base — Y plan -->
+            <path d="M -16 60 L -16 50 L -6 50 L -6 60 Z"/>
+            <path d="M 6 60 L 6 50 L 16 50 L 16 60 Z"/>
+            <path d="M -3 60 L -3 48 L 3 48 L 3 60 Z"/>
+            <!-- Tier 1 (widest above base) -->
+            <path d="M -14 50 L -14 36 L 14 36 L 14 50 Z"/>
+            <!-- Setbacks - tier 2 -->
+            <path d="M -12 36 L -12 22 L 12 22 L 12 36 Z"/>
+            <!-- Tier 3 -->
+            <path d="M -10 22 L -10 8 L 10 8 L 10 22 Z"/>
+            <!-- Tier 4 -->
+            <path d="M -8 8 L -8 -6 L 8 -6 L 8 8 Z"/>
+            <!-- Tier 5 -->
+            <path d="M -6 -6 L -6 -20 L 6 -20 L 6 -6 Z"/>
+            <!-- Tier 6 -->
+            <path d="M -4 -20 L -4 -34 L 4 -34 L 4 -20 Z"/>
+            <!-- Tier 7 -->
+            <path d="M -2.5 -34 L -2.5 -48 L 2.5 -48 L 2.5 -34 Z"/>
+            <!-- Spire base -->
+            <path d="M -1.4 -48 L -1.4 -64 L 1.4 -64 L 1.4 -48 Z"/>
+          </g>
+          <!-- The needle spire -->
+          <line x1="0" y1="-64" x2="0" y2="-92" stroke="#d8b27e" stroke-width="0.8"/>
+          <!-- Glow tip light -->
+          <circle cx="0" cy="-93" r="2" fill="#fde7b6">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Window lines on tiers (horizontal striations) -->
+          <g stroke="#3a2812" stroke-width="0.25" opacity="0.6">
+            <line x1="-12" y1="44" x2="12" y2="44"/>
+            <line x1="-12" y1="30" x2="12" y2="30"/>
+            <line x1="-10" y1="15" x2="10" y2="15"/>
+            <line x1="-8"  y1="1"  x2="8"  y2="1"/>
+            <line x1="-6"  y1="-13" x2="6" y2="-13"/>
+          </g>
+          <!-- Pedestal shadow -->
+          <ellipse cx="0" cy="80" rx="22" ry="3" fill="#000" opacity="0.35"/>
+          <!-- Label (offset right, away from spire) -->
+          <line x1="6" y1="-30" x2="44" y2="-44" stroke="#d8b27e" stroke-width="0.5" opacity="0.7"/>
+          <g transform="translate(46, -52)">
+            <text fill="#d8b27e" font-family="DM Sans, sans-serif" font-size="9" font-weight="500" letter-spacing="2.2">BURJ KHALIFA</text>
+            <text x="0" y="11" fill="#9c8458" font-family="DM Sans, sans-serif" font-size="7" letter-spacing="1.4">828 m · 2010</text>
+          </g>
+        </g>
+
+        <!-- ========= DUBAI MALL — refined retail block ========= -->
+        <g transform="translate(195, 178)">
+          <g fill="#7c6a4a" opacity="0.85" stroke="#3a2812" stroke-width="0.3">
+            <rect x="0" y="0" width="42" height="22"/>
+            <rect x="6" y="-4" width="30" height="4"/>
+            <rect x="14" y="-7" width="14" height="3"/>
+            <!-- Subdivision lines -->
+            <line x1="14" y1="0" x2="14" y2="22" stroke="#3a2812" stroke-width="0.25"/>
+            <line x1="28" y1="0" x2="28" y2="22" stroke="#3a2812" stroke-width="0.25"/>
+            <line x1="0" y1="11" x2="42" y2="11" stroke="#3a2812" stroke-width="0.25"/>
+          </g>
+          <text x="48" y="14" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="7.5" letter-spacing="1.5" opacity="0.85">Dubai Mall</text>
+        </g>
+
+        <!-- ========= DUBAI OPERA — bow shape ========= -->
+        <g transform="translate(165, 248)">
+          <path d="M 0 14 Q 14 -6 28 14 Z" fill="#a89066" opacity="0.65" stroke="#3a2812" stroke-width="0.3"/>
+          <text x="32" y="11" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="7" letter-spacing="1.4" opacity="0.70">Dubai Opera</text>
+        </g>
+
+        <!-- ========= METRO — Business Bay station ========= -->
+        <g transform="translate(86, 82)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#16100a" stroke="#c4baa2" stroke-width="1"/>
+          <text x="0" y="3" text-anchor="middle" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="8" font-weight="600">M</text>
+          <text x="14" y="3" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="6.5" letter-spacing="1.2" opacity="0.7">Business Bay Metro</text>
+        </g>
+
+        <!-- ========= BAY AVENUE ========= -->
+        <g transform="translate(330, 360)">
+          <g fill="#7c6a4a" opacity="0.6" stroke="#3a2812" stroke-width="0.3">
+            <rect x="0" y="0" width="20" height="14"/>
+          </g>
+          <text x="26" y="11" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="6.5" letter-spacing="1.3" opacity="0.65">Bay Avenue</text>
+        </g>
+
+        <!-- Road labels — placed carefully to avoid overlap -->
+        <text x="430" y="42" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="8" letter-spacing="2.5" opacity="0.85">SHEIKH ZAYED RD · E11</text>
+        <text x="100" y="540" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="7" letter-spacing="2" opacity="0.55">AL KHAIL RD · E44</text>
+        <text x="20" y="270" fill="#6a8a8a" font-family="DM Sans, sans-serif" font-size="9" letter-spacing="2" opacity="0.65">DUBAI WATER CANAL</text>
+
+        <!-- ========= AIQ STUDIO MARKER — Opus Building (centred) ========= -->
+        <g class="s-map-pin">
+          <!-- Pulse rings -->
+          <circle cx="320" cy="320" r="58" fill="none" stroke="#d8b27e" stroke-width="0.5" opacity="0.5">
+            <animate attributeName="r" values="14;58;14" dur="3.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.7;0;0.7" dur="3.6s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="320" cy="320" r="38" fill="none" stroke="#d8b27e" stroke-width="0.7" opacity="0.4">
+            <animate attributeName="r" values="10;38;10" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.7;0;0.7" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Opus Building — Zaha Hadid's twin tower with the cube void -->
+          <g transform="translate(320, 320)">
+            <rect x="-20" y="-26" width="40" height="52" fill="#1a120a" stroke="#d8b27e" stroke-width="0.8"/>
+            <rect x="-20" y="-26" width="40" height="52" fill="#d8b27e" opacity="0.18"/>
+            <!-- The "void" — Zaha's signature curved cut-out -->
+            <path d="M -10 -8 Q -10 -2 -4 -2 L 4 -2 Q 10 -2 10 -8 Z" fill="#0a0703" stroke="#d8b27e" stroke-width="0.5"/>
+            <path d="M -10 8 Q -10 2 -4 2 L 4 2 Q 10 2 10 8 Z" fill="#0a0703" stroke="#d8b27e" stroke-width="0.5"/>
+            <!-- Window grid -->
+            <g stroke="#d8b27e" stroke-width="0.15" opacity="0.5">
+              <line x1="-20" y1="-18" x2="20" y2="-18"/>
+              <line x1="-20" y1="18" x2="20" y2="18"/>
+              <line x1="-10" y1="-26" x2="-10" y2="-10"/>
+              <line x1="10" y1="-26" x2="10" y2="-10"/>
+              <line x1="-10" y1="10" x2="-10" y2="26"/>
+              <line x1="10" y1="10" x2="10" y2="26"/>
+            </g>
+            <!-- Marker dot at base -->
+            <circle cx="0" cy="32" r="3.5" fill="#d8b27e"/>
+            <circle cx="0" cy="32" r="1.5" fill="#0a0703"/>
+          </g>
+        </g>
+        <!-- Pin callout line — angled to upper right, doesn't overlap building -->
+        <line x1="340" y1="296" x2="450" y2="232" stroke="#d8b27e" stroke-width="0.7" opacity="0.7" stroke-dasharray="2 4"/>
+        <g transform="translate(360, 200)">
+          <rect x="0" y="0" width="220" height="44" fill="#0a0703" stroke="#d8b27e" stroke-width="0.5" opacity="0.95"/>
+          <text x="110" y="15" fill="#d8b27e" font-family="DM Sans, sans-serif" font-size="10" font-weight="500" letter-spacing="2.6" text-anchor="middle">AIQ STUDIO</text>
+          <text x="110" y="28" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="7.5" letter-spacing="1.6" text-anchor="middle">OFFICE 1605 · TOWER A</text>
+          <text x="110" y="39" fill="#9c8458" font-family="DM Sans, sans-serif" font-size="7" letter-spacing="1.4" text-anchor="middle">OPUS BUILDING · BUSINESS BAY</text>
+        </g>
+
+        <!-- Compass — top right -->
+        <g transform="translate(548, 70)" opacity="0.6">
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#9c8458" stroke-width="0.7"/>
+          <path d="M 0 -18 L 5 6 L 0 0 L -5 6 Z" fill="#d8b27e"/>
+          <text x="0" y="-28" text-anchor="middle" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="8" letter-spacing="1.5">N</text>
+        </g>
+        <!-- Scale bar — bottom left -->
+        <g transform="translate(40, 580)" opacity="0.6">
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#9c8458" stroke-width="0.8"/>
+          <line x1="0" y1="-3" x2="0" y2="3" stroke="#9c8458" stroke-width="0.8"/>
+          <line x1="80" y1="-3" x2="80" y2="3" stroke="#9c8458" stroke-width="0.8"/>
+          <text x="40" y="-7" text-anchor="middle" fill="#c4baa2" font-family="DM Sans, sans-serif" font-size="7" letter-spacing="1.5">500 M</text>
+        </g>
+        <!-- Coordinates - top left -->
+        <text x="40" y="44" fill="#9c8458" font-family="DM Sans, sans-serif" font-size="8" letter-spacing="1.6" opacity="0.65">25.1855° N · 55.2682° E</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<footer class="s-footer">
+  <div class="s-footer__col s-footer__col--brand">
+    <div class="s-footer__brand">AIQ STUDIO</div>
+    <div class="s-footer__tagline">A private intelligence, for one brand.</div>
+  </div>
+  <div class="s-footer__col">
+    <div class="s-footer__lbl">Studio</div>
+    <div class="s-footer__val">Office 1605, Tower A</div>
+    <div class="s-footer__val">Opus Building</div>
+    <div class="s-footer__val">Business Bay, Dubai</div>
+  </div>
+  <div class="s-footer__col">
+    <div class="s-footer__lbl">Contact</div>
+    <div class="s-footer__val">hello@aiqstudio.ae</div>
+    <div class="s-footer__val">+971 4 000 0000</div>
+    <div class="s-footer__val">By appointment</div>
+  </div>
+  <div class="s-footer__col s-footer__col--meta">
+    <div class="s-footer__lbl">© 2026 AIQ Studio</div>
+    <div class="s-footer__val s-footer__val--small">All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="grain"></div>
+
+
+
+<!-- Three.js for hero polyhedra -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script>
+(function(){
+  // Service worker registration — offline support
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
+  const mobileToggle = document.getElementById('mobileNavToggle');
+  const sNav = document.querySelector('.s-nav');
+  if (mobileToggle && sNav) {
+    mobileToggle.addEventListener('click', () => {
+      const open = sNav.classList.toggle('is-open');
+      mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('s-nav-open', open);
+    });
+    sNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      sNav.classList.remove('is-open');
+      document.body.classList.remove('s-nav-open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-on');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -10% 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+  // Fallback: any reveal element already in viewport on load gets is-on immediately
+  requestAnimationFrame(() => {
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        el.classList.add('is-on');
+        io.unobserve(el);
+      }
+    });
+  });
+
+  // Sticky header — fade on scroll-down, condensed on scroll-up
+  const sTop = document.querySelector('.s-top');
+  if (sTop) {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    function onScroll() {
+      const y = window.scrollY;
+      if (y < 80) {
+        sTop.classList.remove('is-hidden');
+        sTop.classList.remove('is-condensed');
+      } else if (y > lastScrollY + 6) {
+        sTop.classList.add('is-hidden');
+      } else if (y < lastScrollY - 6) {
+        sTop.classList.remove('is-hidden');
+        sTop.classList.add('is-condensed');
+      }
+      lastScrollY = y;
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
+    }, { passive: true });
+  }
+
+  // Contact form — proper validation
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      status.style.color = '';
+      const data = new FormData(form);
+      const email = (data.get('email') || '').trim();
+      const phone = (data.get('phone') || '').trim();
+      const name = (data.get('name') || '').trim();
+      const company = (data.get('company') || '').trim();
+      const message = (data.get('message') || '').trim();
+      const consent = document.getElementById('f-consent').checked;
+      if (!name || !company || !message) {
+        status.textContent = 'Please complete every field.';
+        status.style.color = '#c45040';
+        return;
+      }
+      if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/i.test(email)) {
+        status.textContent = 'Please enter a valid email address.';
+        status.style.color = '#c45040';
+        return;
+      }
+      if (!/^[\+]?[0-9\s\-\(\)]{7,20}$/.test(phone)) {
+        status.textContent = 'Please enter a valid phone number with country code.';
+        status.style.color = '#c45040';
+        return;
+      }
+      if (!consent) {
+        status.textContent = 'Please confirm consent to be contacted.';
+        status.style.color = '#c45040';
+        return;
+      }
+      // All validated — show success state. In production wire this to your backend / Formspree / Resend.
+      form.querySelector('.s-form__btn').textContent = 'Enquiry sent';
+      form.querySelector('.s-form__btn').disabled = true;
+      status.textContent = 'Thank you. We will reach out within two business days.';
+      status.style.color = '';
+    });
+  }
+
+  // ===== Three.js Hero — full solar system, mirrors landing =====
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas || typeof THREE === 'undefined') return;
+  // Mobile detection — tier down for performance
+  const _mobile = window.innerWidth <= 880;
+  const dprCap = _mobile ? 1.25 : 2;
+
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 200);
+  const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: !_mobile, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, dprCap));
+  function resize() {
+    renderer.setSize(window.innerWidth, window.innerHeight, false);
+    cam.aspect = window.innerWidth / window.innerHeight;
+    cam.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // ===== Studio hero — pulled in larger; group sits central-right and is bigger =====
+  const group = new THREE.Group();
+  group.position.set(2.0, 0, 0);
+  group.scale.set(1.4, 1.4, 1.4);
+  scene.add(group);
+
+  // ===== Procedural textures =====
+  function makeTex(size, draw) {
+    const c = document.createElement('canvas');
+    c.width = c.height = size;
+    const ctx = c.getContext('2d');
+    draw(ctx, size);
+    const t = new THREE.CanvasTexture(c);
+    t.wrapS = t.wrapT = THREE.RepeatWrapping;
+    return t;
+  }
+
+  const sunTex = makeTex(2048, (ctx, S) => {
+    const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+    g.addColorStop(0, '#fff0c0'); g.addColorStop(0.4, '#fbd478');
+    g.addColorStop(0.75, '#e2a445'); g.addColorStop(1, '#a36420');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
+    for (let i = 0; i < 4000; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 6 + Math.random()*30;
+      const a = 0.1 + Math.random()*0.22;
+      const tone = Math.random() < 0.5 ? '255,210,140' : '170,80,30';
+      const gg = ctx.createRadialGradient(x, y, 0, x, y, r);
+      gg.addColorStop(0, `rgba(${tone},${a})`); gg.addColorStop(1, `rgba(${tone},0)`);
+      ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+    }
+    for (let i = 0; i < 40; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 12 + Math.random()*45;
+      const gg = ctx.createRadialGradient(x, y, 0, x, y, r);
+      gg.addColorStop(0, 'rgba(60,20,0,0.7)'); gg.addColorStop(0.6, 'rgba(120,60,10,0.3)');
+      gg.addColorStop(1, 'rgba(120,60,10,0)');
+      ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+    }
+  });
+
+  const mercuryTex = makeTex(2048, (ctx, S) => {
+    ctx.fillStyle = '#7a6c56'; ctx.fillRect(0,0,S,S);
+    for (let i = 0; i < 14000; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 0.5 + Math.random()*3;
+      const shade = 60 + Math.random()*80;
+      ctx.fillStyle = `rgba(${shade},${shade-10},${shade-20},${0.2+Math.random()*0.4})`;
+      ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+    for (let i = 0; i < 30; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 40 + Math.random()*120;
+      const dark = ctx.createRadialGradient(x, y, 0, x, y, r*0.6);
+      dark.addColorStop(0, 'rgba(40,30,20,0.75)'); dark.addColorStop(1, 'rgba(40,30,20,0)');
+      ctx.fillStyle = dark; ctx.beginPath(); ctx.arc(x,y,r*0.6,0,Math.PI*2); ctx.fill();
+      ctx.strokeStyle = `rgba(230,210,180,${0.35+Math.random()*0.25})`;
+      ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x,y,r*0.85,0,Math.PI*2); ctx.stroke();
+    }
+    for (let i = 0; i < 300; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 8 + Math.random()*40;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, 'rgba(50,40,28,0.7)'); g.addColorStop(0.5, 'rgba(140,120,95,0.5)');
+      g.addColorStop(0.85, 'rgba(220,200,170,0.4)'); g.addColorStop(1, 'rgba(70,60,45,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+  });
+
+  const venusTex = makeTex(2048, (ctx, S) => {
+    const g = ctx.createLinearGradient(0,0,0,S);
+    g.addColorStop(0, '#e8c89a'); g.addColorStop(0.5, '#d8a872'); g.addColorStop(1, '#c89865');
+    ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+    for (let i = 0; i < 400; i++) {
+      ctx.fillStyle = `rgba(${200+Math.random()*40},${160+Math.random()*30},${100+Math.random()*30},${0.1+Math.random()*0.22})`;
+      ctx.fillRect(0, Math.random()*S, S, 4+Math.random()*30);
+    }
+    for (let i = 0; i < 250; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 30 + Math.random()*120;
+      const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g2.addColorStop(0, 'rgba(255,230,180,0.22)'); g2.addColorStop(1, 'rgba(255,230,180,0)');
+      ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+  });
+
+  const earthTex = makeTex(2048, (ctx, S) => {
+    const oc = ctx.createLinearGradient(0,0,0,S);
+    oc.addColorStop(0, '#0e3358'); oc.addColorStop(0.5, '#2670a0'); oc.addColorStop(1, '#0e3358');
+    ctx.fillStyle = oc; ctx.fillRect(0,0,S,S);
+    function continent(cx, cy, sx, sy, color, density) {
+      for (let i = 0; i < density; i++) {
+        const a = Math.random() * Math.PI * 2;
+        const r = Math.random() * 1;
+        const x = cx + Math.cos(a) * sx * (0.5 + r*0.5);
+        const y = cy + Math.sin(a) * sy * (0.5 + r*0.5);
+        const sz = 20 + Math.random() * 50;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, sz);
+        g.addColorStop(0, color); g.addColorStop(1, 'rgba(0,0,0,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,sz,0,Math.PI*2); ctx.fill();
+      }
+    }
+    continent(S*0.49, S*0.45, S*0.07, S*0.18, 'rgba(150,130,70,0.85)', 120);
+    continent(S*0.50, S*0.27, S*0.05, S*0.06, 'rgba(100,130,65,0.85)', 50);
+    continent(S*0.68, S*0.30, S*0.13, S*0.10, 'rgba(110,135,65,0.85)', 120);
+    continent(S*0.82, S*0.62, S*0.06, S*0.05, 'rgba(180,150,80,0.85)', 40);
+    continent(S*0.22, S*0.30, S*0.05, S*0.08, 'rgba(100,140,75,0.85)', 60);
+    continent(S*0.27, S*0.55, S*0.05, S*0.12, 'rgba(80,130,55,0.85)', 70);
+    continent(S*0.30, S*0.18, S*0.04, S*0.03, 'rgba(230,235,240,0.75)', 25);
+    ctx.fillStyle = 'rgba(240,245,250,0.85)'; ctx.fillRect(0, S*0.93, S, S*0.07);
+    for (let i = 0; i < 1200; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 8 + Math.random()*60;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, 'rgba(255,255,255,0.45)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+  });
+
+  const marsTex = makeTex(2048, (ctx, S) => {
+    const g = ctx.createLinearGradient(0,0,0,S);
+    g.addColorStop(0, '#d6a878'); g.addColorStop(0.5, '#b46838'); g.addColorStop(1, '#8a3a18');
+    ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+    for (let i = 0; i < 600; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 12 + Math.random()*100;
+      const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g2.addColorStop(0, 'rgba(60,25,10,0.55)'); g2.addColorStop(1, 'rgba(60,25,10,0)');
+      ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+    for (let i = 0; i < 600; i++) {
+      const x = Math.random()*S, y = Math.random()*S, r = 3 + Math.random()*16;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, 'rgba(50,20,8,0.6)'); g.addColorStop(1, 'rgba(180,130,90,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+    }
+    const cap = ctx.createLinearGradient(0,0,0,S*0.12);
+    cap.addColorStop(0, 'rgba(255,240,230,0.95)'); cap.addColorStop(1, 'rgba(255,240,230,0)');
+    ctx.fillStyle = cap; ctx.fillRect(0,0,S,S*0.12);
+    const cap2 = ctx.createLinearGradient(0, S*0.88, 0, S);
+    cap2.addColorStop(0, 'rgba(255,240,230,0)'); cap2.addColorStop(1, 'rgba(255,240,230,0.95)');
+    ctx.fillStyle = cap2; ctx.fillRect(0, S*0.88, S, S*0.12);
+  });
+
+  const jupiterTex = makeTex(2048, (ctx, S) => {
+    const bands = [['#e8d8b0','#c8a878',0,0.05],['#a87858','#583820',0.05,0.13],['#e0c8a0','#b89870',0.13,0.22],['#c89868','#a07050',0.22,0.30],['#e8d4a8','#c8a878',0.30,0.42],['#a06850','#704028',0.42,0.50],['#d8b888','#a08858',0.50,0.58],['#b88058','#704830',0.58,0.66],['#e0c8a0','#b89870',0.66,0.78],['#a07050','#603828',0.78,0.86],['#d8c098','#a88860',0.86,1.0]];
+    bands.forEach(b => { const y1 = b[2]*S, y2 = b[3]*S; const g = ctx.createLinearGradient(0,y1,0,y2); g.addColorStop(0,b[0]); g.addColorStop(1,b[1]); ctx.fillStyle = g; ctx.fillRect(0,y1,S,y2-y1); });
+    for (let i = 0; i < 2000; i++) {
+      ctx.fillStyle = `rgba(${200+Math.random()*55},${160+Math.random()*40},${100+Math.random()*40},${0.05+Math.random()*0.15})`;
+      ctx.fillRect(Math.random()*S, Math.random()*S, 40+Math.random()*240, 1+Math.random()*4);
+    }
+    const gx = S*0.7, gy = S*0.55, gw = S*0.10, gh = S*0.06;
+    const grs = ctx.createRadialGradient(gx, gy, 0, gx, gy, gw);
+    grs.addColorStop(0, 'rgba(190,90,40,0.9)'); grs.addColorStop(0.6, 'rgba(140,50,20,0.5)'); grs.addColorStop(1, 'rgba(140,50,20,0)');
+    ctx.fillStyle = grs; ctx.beginPath(); ctx.ellipse(gx, gy, gw, gh, 0, 0, Math.PI*2); ctx.fill();
+  });
+
+  const saturnTex = makeTex(2048, (ctx, S) => {
+    const bands = [['#f0e0c0','#e0cc9a',0,0.08],['#e6d2a8','#d4be8e',0.08,0.18],['#d4be8e','#b8a274',0.18,0.30],['#dbc89c','#c4ad84',0.30,0.42],['#e8d8b0','#cebb8e',0.42,0.55],['#d2bd8a','#b6a072',0.55,0.66],['#dccfa0','#bea88a',0.66,0.78],['#c0a878','#a08858',0.78,0.90],['#d4bd8c','#b09870',0.90,1.0]];
+    bands.forEach(b => { const y1 = b[2]*S, y2 = b[3]*S; const g = ctx.createLinearGradient(0,y1,0,y2); g.addColorStop(0,b[0]); g.addColorStop(1,b[1]); ctx.fillStyle = g; ctx.fillRect(0,y1,S,y2-y1); });
+    for (let i = 0; i < 2000; i++) {
+      ctx.fillStyle = `rgba(${220+Math.random()*30},${190+Math.random()*30},${140+Math.random()*30},${0.04+Math.random()*0.12})`;
+      ctx.fillRect(Math.random()*S, Math.random()*S, 80+Math.random()*300, 1+Math.random()*3);
+    }
+  });
+
+  const uranusTex = makeTex(2048, (ctx, S) => {
+    const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+    g.addColorStop(0, '#c0e4dc'); g.addColorStop(1, '#5a8898');
+    ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+    for (let i = 0; i < 400; i++) {
+      ctx.fillStyle = `rgba(${220+Math.random()*30},${230+Math.random()*20},${230+Math.random()*20},${0.04+Math.random()*0.08})`;
+      ctx.fillRect(Math.random()*S, 0, 2+Math.random()*8, S);
+    }
+  });
+
+  const neptuneTex = makeTex(2048, (ctx, S) => {
+    const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+    g.addColorStop(0, '#3a60a8'); g.addColorStop(1, '#0e2858');
+    ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+    for (let i = 0; i < 400; i++) {
+      ctx.fillStyle = `rgba(${70+Math.random()*60},${110+Math.random()*60},${180+Math.random()*40},${0.06+Math.random()*0.10})`;
+      ctx.fillRect(0, Math.random()*S, S, 4+Math.random()*14);
+    }
+    const sx = S*0.35, sy = S*0.45, sr = S*0.10;
+    const sg = ctx.createRadialGradient(sx, sy, 0, sx, sy, sr);
+    sg.addColorStop(0, 'rgba(15,25,70,0.85)'); sg.addColorStop(1, 'rgba(15,25,70,0)');
+    ctx.fillStyle = sg; ctx.beginPath(); ctx.ellipse(sx,sy,sr*1.3,sr*0.8,0,0,Math.PI*2); ctx.fill();
+  });
+
+  // SUN — emissive
+  const sunGeo = new THREE.SphereGeometry(1.32, 64, 64);
+  const sunMat = new THREE.MeshBasicMaterial({ map: sunTex });
+  const brain = new THREE.Mesh(sunGeo, sunMat);
+  group.add(brain);
+
+  // Sun light
+  const sunLight = new THREE.PointLight(0xfde7b6, 4.5, 80, 1.2);
+  sunLight.position.set(0, 0, 0);
+  group.add(sunLight);
+
+  // Corona
+  const coronaTex = (function() {
+    const c = document.createElement('canvas'); c.width = c.height = 512;
+    const ctx = c.getContext('2d');
+    const g = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
+    g.addColorStop(0, 'rgba(255,240,180,1.0)');
+    g.addColorStop(0.08, 'rgba(253,215,130,0.85)');
+    g.addColorStop(0.25, 'rgba(226,160,70,0.4)');
+    g.addColorStop(0.55, 'rgba(180,100,40,0.12)');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g; ctx.fillRect(0,0,512,512);
+    return new THREE.CanvasTexture(c);
+  })();
+  const corona = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: coronaTex, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0.95
+  }));
+  corona.scale.set(6.5, 6.5, 1);
+  group.add(corona);
+
+  // PLANETS — sized to match landing
+  const planetData = [
+    { size: 0.31, dist: 2.6,  speed: 1.30, tilt: 0.02, tex: mercuryTex, rough: 0.85 },
+    { size: 0.55, dist: 4.2,  speed: 0.95, tilt: 0.03, tex: venusTex,   rough: 0.55 },
+    { size: 0.60, dist: 5.8,  speed: 0.78, tilt: 0.0,  tex: earthTex,   rough: 0.50 },
+    { size: 0.47, dist: 7.4,  speed: 0.62, tilt: 0.04, tex: marsTex,    rough: 0.75 },
+    { size: 1.17, dist: 9.6,  speed: 0.34, tilt: 0.02, tex: jupiterTex, rough: 0.45 },
+    { size: 0.99, dist: 12.2, speed: 0.25, tilt: 0.05, tex: saturnTex,  rings: true, rough: 0.50 },
+    { size: 0.70, dist: 14.6, speed: 0.18, tilt: 0.09, tex: uranusTex,  rough: 0.55 },
+    { size: 0.68, dist: 17.0, speed: 0.13, tilt: -0.06, tex: neptuneTex, rough: 0.55 }
+  ];
+  const sats = [];
+  planetData.forEach((p, idx) => {
+    const geo = new THREE.SphereGeometry(p.size, 64, 64);
+    const mat = new THREE.MeshStandardMaterial({ map: p.tex, roughness: p.rough, metalness: 0.0 });
+    const planet = new THREE.Mesh(geo, mat);
+    planet.userData = {
+      dist: p.dist, speed: p.speed, tilt: p.tilt,
+      ang: idx * 0.7 + Math.random() * Math.PI,
+      spin: 0.4 + Math.random() * 1.0
+    };
+    planet.rotation.z = (Math.random() - 0.5) * 0.4;
+    group.add(planet);
+    sats.push(planet);
+
+    if (p.rings) {
+      const ringTex = makeTex(1024, (ctx, S) => {
+        ctx.clearRect(0,0,S,S);
+        for (let i = 0; i < S; i++) {
+          const t = i / S;
+          let edgeFade = Math.min(1, t/0.06) * Math.min(1, (1-t)/0.10);
+          let density = 0.32 + 0.18 * Math.sin(t*24) + 0.10 * Math.sin(t*60);
+          if (Math.abs(t-0.30) < 0.018) density *= 0.10;
+          if (Math.abs(t-0.62) < 0.012) density *= 0.20;
+          if (Math.abs(t-0.42) < 0.008) density *= 0.35;
+          density = Math.max(0, density) * edgeFade;
+          const baseR = 200 + Math.sin(i*0.4)*18 + (Math.random()-0.5)*12;
+          ctx.fillStyle = `rgba(${baseR},${baseR-18},${baseR-70},${density.toFixed(3)})`;
+          ctx.fillRect(0, i, S, 1);
+        }
+      });
+      const ringGeo = new THREE.RingGeometry(p.size * 1.45, p.size * 2.45, 96, 1);
+      const pos = ringGeo.attributes.position; const uv = ringGeo.attributes.uv;
+      const v3 = new THREE.Vector3();
+      for (let i = 0; i < pos.count; i++) {
+        v3.fromBufferAttribute(pos, i); const r = v3.length();
+        const u = (r - p.size*1.45) / (p.size*2.45 - p.size*1.45);
+        uv.setXY(i, u, 0.5);
+      }
+      const rings = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({
+        map: ringTex, transparent: true, side: THREE.DoubleSide, depthWrite: false, opacity: 0.85
+      }));
+      rings.rotation.x = Math.PI/2 - 0.22;
+      planet.add(rings);
+    }
+
+    // Orbit trail
+    const orbitPoints = [];
+    for (let s = 0; s <= 128; s++) {
+      const a = (s/128) * Math.PI * 2;
+      orbitPoints.push(new THREE.Vector3(Math.cos(a)*p.dist, 0, Math.sin(a)*p.dist));
+    }
+    const orbit = new THREE.LineLoop(
+      new THREE.BufferGeometry().setFromPoints(orbitPoints),
+      new THREE.LineBasicMaterial({ color: 0xc4baa2, transparent: true, opacity: 0.10 })
+    );
+    orbit.rotation.x = p.tilt;
+    group.add(orbit);
+  });
+
+  // STARFIELD — adaptive count
+  const starsCount = _mobile ? 2400 : 8000;
+  const starsGeo = new THREE.BufferGeometry();
+  const starsPos = new Float32Array(starsCount * 3);
+  const starsColors = new Float32Array(starsCount * 3);
+  const starsSizes = new Float32Array(starsCount);
+  for (let i = 0; i < starsCount; i++) {
+    const phi = Math.random() * Math.PI * 2;
+    const theta = Math.acos(2 * Math.random() - 1);
+    const r = 50 + Math.random() * 60;
+    starsPos[i*3+0] = r * Math.sin(theta) * Math.cos(phi);
+    starsPos[i*3+1] = r * Math.sin(theta) * Math.sin(phi);
+    starsPos[i*3+2] = r * Math.cos(theta);
+    const tone = Math.random();
+    if (tone < 0.65) { starsColors[i*3+0] = 0.95; starsColors[i*3+1] = 0.90; starsColors[i*3+2] = 0.78; }
+    else if (tone < 0.85) { starsColors[i*3+0] = 0.75; starsColors[i*3+1] = 0.85; starsColors[i*3+2] = 1.0; }
+    else { starsColors[i*3+0] = 1.0; starsColors[i*3+1] = 0.78; starsColors[i*3+2] = 0.50; }
+    const r2 = Math.random();
+    starsSizes[i] = r2 < 0.55 ? 0.08 + Math.random() * 0.14
+                : r2 < 0.82 ? 0.22 + Math.random() * 0.28
+                : r2 < 0.95 ? 0.55 + Math.random() * 0.45
+                : 1.20 + Math.random() * 0.90;
+  }
+  starsGeo.setAttribute('position', new THREE.BufferAttribute(starsPos, 3));
+  starsGeo.setAttribute('color', new THREE.BufferAttribute(starsColors, 3));
+  starsGeo.setAttribute('aSize', new THREE.BufferAttribute(starsSizes, 1));
+  const starSpriteTex = (function() {
+    const c = document.createElement('canvas'); c.width = c.height = 64;
+    const ctx = c.getContext('2d');
+    const g = ctx.createRadialGradient(32,32,0,32,32,32);
+    g.addColorStop(0, 'rgba(255,255,255,1)');
+    g.addColorStop(0.35, 'rgba(255,255,255,0.55)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g; ctx.fillRect(0,0,64,64);
+    return new THREE.CanvasTexture(c);
+  })();
+  const starsMat = new THREE.ShaderMaterial({
+    uniforms: { uTex: { value: starSpriteTex }, uPxRatio: { value: window.devicePixelRatio || 1 }, uTime: { value: 0 } },
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    vertexShader: `attribute float aSize; attribute vec3 color; varying vec3 vColor; varying float vSeed;
+      uniform float uTime; uniform float uPxRatio;
+      void main() { vColor = color; vSeed = position.x*0.13 + position.y*0.27;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        gl_PointSize = aSize * 420.0 * uPxRatio / -mv.z;
+        gl_Position = projectionMatrix * mv; }`,
+    fragmentShader: `uniform sampler2D uTex; uniform float uTime; varying vec3 vColor; varying float vSeed;
+      void main() { vec4 t = texture2D(uTex, gl_PointCoord); if (t.a < 0.02) discard;
+        float twinkle = 0.7 + 0.3 * sin(uTime * 2.0 + vSeed * 6.28);
+        gl_FragColor = vec4(vColor, 1.0) * t.a * twinkle; }`
+  });
+  const stars = new THREE.Points(starsGeo, starsMat);
+  scene.add(stars);
+
+  // METEORS — pre-launched + occasional random
+  const meteors = [];
+  for (let i = 0; i < 6; i++) {
+    const g = new THREE.BufferGeometry();
+    const pp = new Float32Array(2*3);
+    g.setAttribute('position', new THREE.BufferAttribute(pp, 3));
+    const m = new THREE.Line(g, new THREE.LineBasicMaterial({
+      color: i % 3 === 0 ? 0xffe6ba : i % 3 === 1 ? 0xfff4d4 : 0xd6b88a,
+      transparent: true, opacity: 0, blending: THREE.AdditiveBlending
+    }));
+    m.userData = { active: false, startT: 0, duration: 0, sx:0, sy:0, sz:0, dx:0, dy:0, dz:0, positions: pp };
+    scene.add(m); meteors.push(m);
+  }
+  meteors.slice(0, 3).forEach((m, i) => {
+    const u = m.userData;
+    u.active = true; u.startT = -0.4 + i * 0.3; u.duration = 1.4 + i * 0.4;
+    const ang = i * 1.7;
+    u.sx = Math.cos(ang) * 36; u.sy = (i % 2 === 0 ? 6 : -4) + i * 1.6; u.sz = Math.sin(ang) * 36;
+    u.dx = -Math.cos(ang) * (14 + i * 4); u.dy = (Math.random()-0.5)*5; u.dz = -Math.sin(ang) * (14 + i * 4);
+  });
+
+  // Dust — adaptive
+  const dustCount = _mobile ? 120 : 320;
+  const dustGeo2 = new THREE.BufferGeometry();
+  const dustPos2 = new Float32Array(dustCount * 3);
+  for (let i = 0; i < dustCount; i++) {
+    dustPos2[i*3+0] = (Math.random()-0.5)*30;
+    dustPos2[i*3+1] = (Math.random()-0.5)*18;
+    dustPos2[i*3+2] = (Math.random()-0.5)*22 - 1;
+  }
+  dustGeo2.setAttribute('position', new THREE.BufferAttribute(dustPos2, 3));
+  const dustBaseY = dustPos2.slice();
+  const dust = new THREE.Points(dustGeo2, new THREE.PointsMaterial({
+    color: 0x9c8458, size: 0.04, transparent: true, opacity: 0.5,
+    blending: THREE.AdditiveBlending, depthWrite: false
+  }));
+  scene.add(dust);
+
+  let scroll = 0, scrollTarget = 0;
+  window.addEventListener('scroll', () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    scrollTarget = Math.max(0, Math.min(1, window.scrollY / max));
+  }, { passive: true });
+
+  function loop(now) {
+    requestAnimationFrame(loop);
+    scroll += (scrollTarget - scroll) * 0.06;
+    const t = now * 0.001;
+
+    // Sun spin + pulse
+    brain.rotation.y = t * 0.08;
+    brain.rotation.x = t * 0.03;
+    const pulse = 1.0 + Math.sin(t * 0.5) * 0.02;
+    brain.scale.set(pulse, pulse, pulse);
+    const cp = 6.5 + Math.sin(t * 0.4) * 0.3;
+    corona.scale.set(cp, cp, 1);
+
+    // Planets — proper orbital motion
+    sats.forEach((p, i) => {
+      const u = p.userData;
+      u.ang += u.speed * 0.005;
+      const x = Math.cos(u.ang) * u.dist;
+      const z = Math.sin(u.ang) * u.dist;
+      const y = Math.sin(u.ang) * u.dist * u.tilt;
+      p.position.set(x, y, z);
+      p.rotation.y = t * u.spin;
+    });
+
+    // Stars
+    stars.rotation.y = t * 0.006;
+    stars.rotation.x = t * 0.003;
+    starsMat.uniforms.uTime.value = t;
+
+    // Dust drift
+    for (let i = 0; i < dustCount; i++) {
+      dustPos2[i*3+1] = dustBaseY[i*3+1] + ((t * 0.08 + i * 0.27) % 12) - 6;
+    }
+    dust.geometry.attributes.position.needsUpdate = true;
+
+    // Meteors
+    for (const m of meteors) {
+      const u = m.userData;
+      if (!u.active) {
+        if (Math.random() < 0.01) {
+          u.active = true; u.startT = t; u.duration = 0.8 + Math.random() * 0.7;
+          const ang = Math.random() * Math.PI * 2;
+          const dist = 30 + Math.random() * 15;
+          u.sx = Math.cos(ang) * dist; u.sy = (Math.random()-0.5)*35; u.sz = Math.sin(ang) * dist;
+          const dirAng = ang + Math.PI + (Math.random()-0.5)*0.6;
+          const length = 14 + Math.random() * 8;
+          u.dx = Math.cos(dirAng) * length; u.dy = (Math.random()-0.5)*6; u.dz = Math.sin(dirAng) * length;
+        }
+      } else {
+        const prog = (t - u.startT) / u.duration;
+        if (prog >= 1) { u.active = false; m.material.opacity = 0; }
+        else {
+          const hx = u.sx + u.dx * prog, hy = u.sy + u.dy * prog, hz = u.sz + u.dz * prog;
+          const tx = hx - u.dx * 0.08, ty = hy - u.dy * 0.08, tz = hz - u.dz * 0.08;
+          u.positions[0] = tx; u.positions[1] = ty; u.positions[2] = tz;
+          u.positions[3] = hx; u.positions[4] = hy; u.positions[5] = hz;
+          m.geometry.attributes.position.needsUpdate = true;
+          const fade = prog < 0.15 ? prog / 0.15 : prog > 0.75 ? (1 - prog) / 0.25 : 1.0;
+          m.material.opacity = fade * 0.92;
+        }
+      }
+    }
+
+    // Camera — slightly elevated wide view, group fills right side
+    const angle = t * 0.04;
+    const radius = 26 - scroll * 5;
+    cam.position.x = group.position.x + Math.sin(angle) * radius * 0.10;
+    cam.position.y = 7 - scroll * 3 + Math.sin(t * 0.10) * 0.4;
+    cam.position.z = radius;
+    cam.lookAt(group.position.x, 0, 0);
+
+    renderer.render(scene, cam);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

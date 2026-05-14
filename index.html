@@ -1,0 +1,2354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="description" content="AIQ Studio — a private AI atelier. We build one Brain, trained on one brand. Every creative discipline — image, video, motion, music, identity, copy, architecture, launch — in one voice. The Medicis of now." />
+  <meta name="keywords" content="AIQ Studio, private AI, brand intelligence, AI creative studio, generative AI for brands, AI atelier Dubai, Medici AI, brand AI" />
+  <meta name="author" content="AIQ Studio" />
+  <meta name="theme-color" content="#0E0A06" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://ghuser03.github.io/AIQSTUDIO/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghuser03.github.io/AIQSTUDIO/" />
+  <meta property="og:site_name" content="AIQ Studio" />
+  <meta property="og:title" content="AIQ Studio — A private intelligence, for one brand" />
+  <meta property="og:description" content="The Medicis gathered the greatest minds and created a Renaissance. We do the same for one brand at a time, with AI." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AIQ Studio" />
+  <meta name="twitter:description" content="A private intelligence, for one brand." />
+  <meta name="twitter:image" content="https://ghuser03.github.io/AIQSTUDIO/og-image.png" />
+  <meta property="og:image" content="https://ghuser03.github.io/AIQSTUDIO/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AIQ Studio — A private intelligence, for one brand" />
+  <title>AIQ Studio — A private intelligence, for one brand</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AIQ Studio",
+    "description": "A private AI atelier. One Brain, trained on one brand. Every creative discipline in one voice.",
+    "url": "https://aiqstudio.ae/",
+    "logo": "https://aiqstudio.ae/logo.svg",
+    "foundingDate": "2026",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Office 1605, Tower A, Opus Building, Business Bay",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "hello@aiqstudio.ae",
+      "telephone": "+971 4 000 0000"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --plaster:   #F4ECDD;
+  --alabaster: #EFE5D2;
+  --alabaster-2: #E1D5BB;
+  --parchment: #D8C9A7;
+  --stone:     #B3A88F;
+  --champagne: #c4baa2;
+  --bronze-warm: #9c8458;
+  --bronze:      #7c6a4a;
+  --bronze-deep: #4a3525;
+  --verdigris:   #4a5048;
+  --umber-2: #2A1F14;
+  --umber:   #1B130A;
+  --graphite:#3A3936;
+  --indigo:  #14131C;
+  --ink:     #1F160D;
+
+  --serif: "Instrument Serif", "EB Garamond", "Garamond", serif;
+  --mono:  "DM Sans", ui-sans-serif, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; max-width: 100vw; }
+html { background: var(--umber); -webkit-text-size-adjust: 100%; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .loader { display: none !important; }
+}
+
+/* Page-load fade-in */
+body { animation: aiq-fade-in 1000ms ease both; }
+@keyframes aiq-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* Print stylesheet */
+@media print {
+  body { background: #fff; color: #000; }
+  #stage, .loader, .topbar, .hud, .progress, .sound, .index-panel, .grain, .scroll-track, .captions { display: none !important; }
+}
+
+
+body {
+  font-family: var(--serif);
+  color: var(--plaster);
+  background: var(--umber);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  overscroll-behavior: none;
+}
+::selection { background: var(--bronze-warm); color: var(--plaster); }
+a { color: inherit; text-decoration: none; }
+
+/* The scroll runway — 24 sections × ~100vh; reduced on mobile to ease rendering */
+.scroll-track {
+  position: relative;
+  height: 2400vh;
+  z-index: 1;
+}
+@media (max-width: 880px) {
+  .scroll-track { height: 1400vh; }
+}
+
+/* The fixed cinema stage */
+.stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 50% 50%, #1a120a 0%, #050402 100%);
+  perspective: 1800px;
+  perspective-origin: 50% 45%;
+}
+
+/* Ambient — full-screen Three.js canvas (the 3D Renaissance geometry) */
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+#threeStage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* One bg layer per scene — opacity driven by scroll */
+.frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+.frame__bg {
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0d0a06;
+  filter: brightness(0.92) contrast(1.06) saturate(0.96);
+  will-change: transform, opacity;
+  transform: scale(1.0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+/* Subtle linear gradient feather around image (museum-wall feel) */
+.frame__bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(150% 110% at 50% 50%, transparent 50%, rgba(11,8,4,0.65) 100%);
+  pointer-events: none;
+}
+/* Bottom darkening for caption legibility */
+.frame__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(11,8,4,0.20) 0%, transparent 18%, transparent 50%, rgba(7,5,3,0.78) 88%, rgba(5,3,2,0.94) 100%),
+    linear-gradient(180deg, rgba(11,8,4,0.55) 0%, transparent 18%);
+}
+
+/* The stage sits at z 0 — frames are absolutely positioned inside */
+.stage > .frame { z-index: 2; }
+.scenes { z-index: 4 !important; }
+.topbar, .hud, .progress, .sound { z-index: 8 !important; }
+.nameplate { z-index: 4 !important; }
+.frame--door .frame__bg { background-color: #1a1006; }
+/* Final invitation — warm bronze gradient backdrop, no image */
+.frame__bg--invite {
+  background:
+    radial-gradient(80% 90% at 50% 50%, rgba(196,148,96,0.24) 0%, rgba(15,10,5,0.0) 60%),
+    radial-gradient(120% 120% at 50% 100%, rgba(92,66,34,0.55) 0%, rgba(15,10,5,0.0) 70%),
+    linear-gradient(180deg, #14100a 0%, #0a0703 100%) !important;
+}
+.frame--invite .frame__bg::before,
+.frame--invite .frame__bg::after { background: none !important; }
+
+/* Frame content (text overlay) */
+.scenes {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.scene {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  /* Bottom center — script docks at bottom so art is never covered */
+  align-items: end;
+  justify-items: center;
+  text-align: center;
+  padding: 0 8vw 11vh;
+  opacity: 0;
+  transition: opacity 700ms ease;
+  pointer-events: none;
+}
+.scene.is-on { opacity: 1; }
+.scene__inner {
+  max-width: 760px;
+  width: 100%;
+  text-align: center;
+}
+.scene__num {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  color: var(--bronze-warm);
+  margin-bottom: 14px;
+  display: block;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.7);
+  text-transform: uppercase;
+}
+.scene__line {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(22px, 3.0vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  color: var(--plaster);
+  margin: 0;
+  text-wrap: pretty;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.5);
+}
+.scene__line em {
+  font-style: italic;
+  color: var(--bronze-warm);
+  font-weight: 400;
+}
+.scene__sub {
+  margin-top: 16px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 16px);
+  color: color-mix(in oklab, var(--plaster) 80%, transparent);
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.45;
+  text-wrap: pretty;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.75);
+}
+
+/* Final CTA — clean bronze-outlined button */
+.scene__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 16px 30px;
+  background: rgba(11,8,4,0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in oklab, var(--bronze-warm) 75%, transparent);
+  color: var(--plaster);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.40em;
+  text-transform: uppercase;
+  pointer-events: auto;
+  transition: background 350ms ease, color 350ms ease, border-color 350ms ease;
+}
+.scene__cta:hover {
+  background: var(--bronze-warm);
+  color: var(--umber);
+  border-color: var(--bronze-warm);
+}
+
+
+/* Master name plate — bottom-left, museum label style — raised so it never clashes with center title */
+.nameplate {
+  position: fixed;
+  left: 32px;
+  bottom: 22vh;
+  z-index: 4;
+  max-width: 240px;
+  padding-left: 14px;
+  border-left: 1px solid color-mix(in oklab, var(--bronze-warm) 70%, transparent);
+  opacity: 0;
+  transition: opacity 800ms ease 100ms, transform 800ms ease 100ms;
+  transform: translateX(-10px);
+  pointer-events: none;
+}
+.nameplate.is-on { opacity: 1; transform: translateX(0); }
+.nameplate__name {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0.005em;
+  color: var(--plaster);
+  margin: 0 0 4px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+.nameplate__life {
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  color: var(--bronze-warm);
+  margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+}
+.nameplate__work {
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: color-mix(in oklab, var(--plaster) 70%, transparent);
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+  line-height: 1.5;
+}
+
+
+
+
+
+/* Question scene — inscribed feel */
+.scene--q .scene__num { color: var(--bronze-warm); font-size: 11px; letter-spacing: 0.4em; }
+.scene--q .scene__line {
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(28px, 4.2vw, 60px);
+  text-wrap: balance;
+}
+
+/* Roster — for the masters scene */
+.scene--roster .scene__line {
+  font-size: clamp(28px, 3.8vw, 56px);
+  line-height: 1.35;
+}
+.scene--roster .scene__line span {
+  display: block;
+  font-style: italic;
+}
+
+/* Discipline cascade */
+.scene--cascade .scene__line {
+  font-size: clamp(28px, 3.8vw, 56px);
+  line-height: 1.4;
+}
+.scene--cascade .scene__line span {
+  display: inline-block;
+  margin: 0 0.4em;
+}
+
+/* The final invitation card */
+.scene--final {
+  padding-bottom: 12vh;
+}
+.scene--final .scene__inner {
+  max-width: 920px;
+}
+.scene--final .scene__line {
+  font-size: clamp(38px, 5vw, 78px);
+}
+.scene--final .scene__sub {
+  font-style: normal;
+  margin-top: 36px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--plaster) 75%, transparent);
+}
+.scene--final .enter {
+  margin-top: 44px;
+  display: inline-flex; align-items: center; gap: 16px;
+  padding: 18px 28px;
+  border: 1px solid color-mix(in oklab, var(--bronze-warm) 70%, transparent);
+  color: var(--plaster);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.36em;
+  pointer-events: auto;
+  transition: background 350ms ease, color 350ms ease, border-color 350ms ease;
+}
+.scene--final .enter:hover {
+  background: var(--bronze-warm);
+  color: var(--umber);
+  border-color: var(--bronze-warm);
+}
+
+/* HUD — bottom-left */
+.hud {
+  position: fixed;
+  left: 24px; bottom: 24px;
+  z-index: 7;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  color: color-mix(in oklab, var(--plaster) 75%, transparent);
+  display: flex; gap: 14px; align-items: baseline;
+  pointer-events: none;
+  transition: color 800ms ease;
+}
+.hud.on-light { color: color-mix(in oklab, var(--ink) 75%, transparent); }
+.hud__num { color: var(--bronze-warm); min-width: 24px; }
+.hud__name { letter-spacing: 0.18em; }
+
+/* Top bar */
+.topbar {
+  position: fixed;
+  top: 24px; left: 0; right: 0;
+  z-index: 8;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0 28px;
+  color: var(--plaster);
+  pointer-events: none;
+  transition: color 800ms ease;
+}
+.topbar.on-light { color: var(--ink); }
+.topbar > * { pointer-events: auto; }
+.wordmark {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.44em;
+  color: inherit;
+}
+.topbar__right {
+  display: flex; gap: 24px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+}
+.topbar__right button, .topbar__right a {
+  background: transparent; border: 0;
+  color: inherit; font: inherit; letter-spacing: inherit;
+  padding: 6px 2px;
+  position: relative;
+  cursor: pointer;
+}
+.topbar__right button::after, .topbar__right a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 1px; background: currentColor; opacity: 0;
+  transition: opacity 250ms ease;
+}
+.topbar__right button:hover::after, .topbar__right a:hover::after { opacity: 0.5; }
+
+/* Right edge progress */
+.progress {
+  position: fixed; right: 24px; top: 14vh; bottom: 14vh;
+  width: 1px;
+  background: color-mix(in oklab, currentColor 18%, transparent);
+  z-index: 7;
+  color: var(--plaster);
+  transition: color 800ms ease;
+}
+.progress.on-light { color: var(--ink); }
+.progress__fill {
+  position: absolute; top: 0; left: -0.5px;
+  width: 2px;
+  background: var(--bronze-warm);
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.progress__tick {
+  position: absolute;
+  left: -3px; width: 7px; height: 1px;
+  background: color-mix(in oklab, currentColor 35%, transparent);
+}
+
+/* Sound toggle */
+.sound {
+  position: fixed;
+  right: 24px; bottom: 24px;
+  z-index: 8;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  color: color-mix(in oklab, var(--plaster) 75%, transparent);
+  background: transparent; border: 0; cursor: pointer;
+  display: flex; align-items: center; gap: 10px;
+  transition: color 800ms ease;
+}
+.sound.on-light { color: color-mix(in oklab, var(--ink) 75%, transparent); }
+.sound__dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--bronze-warm);
+}
+.sound[data-on="false"] .sound__dot {
+  background: color-mix(in oklab, currentColor 35%, transparent);
+}
+
+/* INDEX overlay */
+.index-panel {
+  position: fixed; inset: 0;
+  z-index: 50;
+  background: color-mix(in oklab, var(--umber) 95%, transparent);
+  color: var(--plaster);
+  display: grid; place-items: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 500ms ease;
+}
+.index-panel.is-on { opacity: 1; pointer-events: auto; }
+.index-panel__list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 18px;
+  text-align: center;
+}
+.index-panel__item {
+  display: flex; align-items: baseline; justify-content: center;
+  gap: 32px; cursor: pointer;
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(28px, 3.4vw, 48px);
+  color: color-mix(in oklab, var(--plaster) 60%, transparent);
+  transition: color 300ms ease;
+  background: transparent; border: 0;
+}
+.index-panel__item:hover { color: var(--bronze-warm); }
+.index-panel__num {
+  font-family: var(--mono);
+  font-size: 11px; letter-spacing: 0.36em;
+  color: color-mix(in oklab, var(--plaster) 50%, transparent);
+  min-width: 3em; text-align: right;
+}
+.index-panel__esc {
+  position: absolute; top: 24px; right: 28px;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.32em; color: color-mix(in oklab, var(--plaster) 60%, transparent);
+  background: transparent; border: 0; cursor: pointer;
+}
+
+/* Loader */
+.loader {
+  position: fixed; inset: 0;
+  background: rgba(10, 7, 4, 0.92);
+  color: var(--plaster);
+  z-index: 100;
+  display: grid; place-items: center;
+  transition: opacity 1.4s ease 0.2s;
+}
+.loader.done { opacity: 0; pointer-events: none; }
+.loader__wrap { width: min(420px, 60vw); text-align: center; }
+.loader__mark {
+  font-family: var(--serif);
+  font-size: 32px;
+  letter-spacing: 0.42em;
+  font-weight: 300;
+  color: var(--plaster);
+  margin-bottom: 28px;
+}
+.loader__bar {
+  height: 1px; width: 100%;
+  background: color-mix(in oklab, var(--plaster) 20%, transparent);
+  position: relative; overflow: hidden;
+}
+.loader__bar::after {
+  content: ""; position: absolute; inset: 0;
+  width: 100%;
+  background: var(--bronze-warm);
+  transform: scaleX(var(--p, 0));
+  transform-origin: left;
+  transition: transform 80ms linear;
+}
+.loader__num {
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  color: color-mix(in oklab, var(--plaster) 70%, transparent);
+}
+
+/* Grain + vignette */
+.grain {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0 0.04 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.9'/></svg>");
+  background-size: 180px 180px;
+}
+
+
+
+/* Custom cursor */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
+  .cursor-dot, .cursor-ring {
+    position: fixed; top: 0; left: 0;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+  }
+  .cursor-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--bronze-warm);
+  }
+  .cursor-ring {
+    width: 30px; height: 30px; border-radius: 50%;
+    border: 1px solid color-mix(in oklab, var(--bronze-warm) 65%, transparent);
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none; }
+  body { cursor: auto; }
+}
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 880px) {
+  .topbar { padding: 14px 16px; }
+  .wordmark { font-size: 12px; letter-spacing: 0.30em; }
+  .topbar__right { gap: 14px; font-size: 9px; letter-spacing: 0.22em; }
+  .hud { left: 14px; bottom: 16px; font-size: 9px; letter-spacing: 0.22em; }
+  .sound { right: 14px; bottom: 16px; font-size: 9px; letter-spacing: 0.22em; }
+  .progress { right: 12px; top: 18vh; bottom: 18vh; }
+  .scene { padding: 0 5vw 16vh; }
+  .scene__line { font-size: clamp(18px, 5vw, 28px); line-height: 1.18; }
+  .scene__sub { font-size: 13px; line-height: 1.45; max-width: 36ch; }
+  .scene__num { font-size: 8px; letter-spacing: 0.3em; margin-bottom: 12px; }
+  .scene__cta { padding: 14px 22px; font-size: 9px; letter-spacing: 0.34em; margin-top: 24px; }
+  .nameplate { left: 14px; bottom: 38vh; max-width: 200px; padding-left: 10px; }
+  .nameplate__name { font-size: 13px; }
+  .nameplate__life { font-size: 7px; letter-spacing: 0.30em; }
+  .nameplate__work { font-size: 7px; letter-spacing: 0.16em; line-height: 1.4; }
+  .index-panel__item { font-size: clamp(22px, 6vw, 32px); gap: 18px; }
+  .index-panel__num { font-size: 9px; letter-spacing: 0.30em; min-width: 2em; }
+  .loader__mark { font-size: 24px; letter-spacing: 0.32em; }
+}
+@media (max-width: 480px) {
+  .scene__line { font-size: clamp(16px, 5.5vw, 24px); }
+  .scene__sub  { font-size: 12px; max-width: 32ch; }
+  .nameplate { bottom: 36vh; max-width: 170px; }
+  .nameplate__name { font-size: 12px; }
+  .topbar__right { gap: 10px; font-size: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader__wrap">
+    <div class="loader__mark">AIQ STUDIO</div>
+    <div class="loader__bar"><div class="loader__bar__fill"></div></div>
+    <div class="loader__num" id="loaderNum">I · COSMOS</div>
+  </div>
+</div>
+
+<!-- The 3D rotating Renaissance geometry — Leonardo's polyhedra study,
+     the AIQ "Brain" (icosahedron) surrounded by floating disciplines (cube · octahedron · tetrahedron) -->
+<div class="ambient" aria-hidden="true">
+  <canvas id="threeStage"></canvas>
+</div>
+
+<!-- Fixed cinema stage with bg layers -->
+<div class="stage" id="stage" aria-hidden="true">
+
+  <!-- ACT I — Inside, fragmented Romanesque before Renaissance -->
+  <div class="frame" data-from="0.080" data-to="0.140"
+       data-master="Italian medieval fresco" data-life="Italian · pre-Renaissance"
+       data-work="Dragon · Romanesque fresco, before 1200">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/cl/original/DP-41927-001.jpg"></div>
+  </div>
+
+  <!-- ACT II — Florence 1450 — Medici commissioned Lo Scheggia painting -->
+  <div class="frame" data-from="0.135" data-to="0.200"
+       data-master="Giovanni di ser Giovanni Guidi (Lo Scheggia)" data-life="1406 – 1486"
+       data-work="The Triumph of Fame, Impresa of the Medici · c. 1449">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP164870.jpg"></div>
+  </div>
+
+  <!-- ACT III — The masters, all Medici-supported, each named, all distinct works -->
+  <div class="frame frame--master" data-from="0.200" data-to="0.260"
+       data-master="Fra Angelico" data-life="c. 1395 – 1455"
+       data-work="The Crucifixion · c. 1420">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP-31245-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.255" data-to="0.315"
+       data-master="Fra Filippo Lippi" data-life="c. 1406 – 1469"
+       data-work="Madonna and Child Enthroned with Two Angels · c. 1440">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP-20746-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.310" data-to="0.370"
+       data-master="Donatello" data-life="c. 1386 – 1466"
+       data-work="Madonna and Child · 15th century">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/es/original/DP-39012-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.365" data-to="0.425"
+       data-master="Luca della Robbia" data-life="1399 – 1482"
+       data-work="Madonna and Child with Scroll · c. 1455">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/es/original/DP-16188-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.420" data-to="0.480"
+       data-master="Mino da Fiesole" data-life="1429 – 1484"
+       data-work="Cardinal Guillaume d'Estouteville · c. 1465">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/es/original/DP241472.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.475" data-to="0.535"
+       data-master="Andrea del Verrocchio" data-life="1435 – 1488"
+       data-work="Madonna and Child · c. 1470">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP-19523-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.530" data-to="0.590"
+       data-master="Antonio Pollaiuolo" data-life="c. 1429 – 1498"
+       data-work="Saint John the Baptist · c. 1460 – 80">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/es/original/DP-35183-001.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.585" data-to="0.645"
+       data-master="Domenico Ghirlandaio" data-life="1448 – 1494"
+       data-work="Saint Christopher and the Infant Christ · c. 1490">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/EP371.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.640" data-to="0.700"
+       data-master="Sandro Botticelli" data-life="1445 – 1510"
+       data-work="The Annunciation · c. 1485 – 92">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/rl/original/DP267397.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.695" data-to="0.755"
+       data-master="Leonardo da Vinci" data-life="1452 – 1519"
+       data-work="A Bear Walking · c. 1482 – 85">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/rl/original/DP324213.jpg"></div>
+  </div>
+  <div class="frame frame--master" data-from="0.750" data-to="0.815"
+       data-master="Filippino Lippi" data-life="1457 – 1504"
+       data-work="Madonna and Child · c. 1483 – 84">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP243637.jpg"></div>
+  </div>
+
+  <!-- ACT IV — The result, then AIQ -->
+  <div class="frame" data-from="0.810" data-to="0.875"
+       data-master="Andrea del Sarto" data-life="1486 – 1530"
+       data-work="The Holy Family with the Young Saint John the Baptist · c. 1528">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP295025.jpg"></div>
+  </div>
+
+  <!-- ACT V — Bronzino's Cosimo de' Medici — "We are the Medici of now" -->
+  <div class="frame frame--medici" data-from="0.870" data-to="0.945"
+       data-master="Bronzino (Agnolo di Cosimo)" data-life="1503 – 1572"
+       data-work="Cosimo I de' Medici · Duke of Florence">
+    <div class="frame__bg" data-src="https://images.metmuseum.org/CRDImages/ep/original/DP104985.jpg"></div>
+  </div>
+
+  <!-- ACT VI — The Invitation — clean, no image, dark bronze stage -->
+  <div class="frame frame--invite" data-from="0.940" data-to="1.001">
+    <div class="frame__bg frame__bg--invite"></div>
+  </div>
+</div>
+
+
+
+<!-- Top bar -->
+<header class="topbar" id="topbar">
+  <a href="index.html" class="wordmark">AIQ STUDIO</a>
+  <nav class="topbar__right">
+    <button type="button" id="indexBtn">INDEX</button>
+    <a href="studio.html">STUDIO</a>
+  </nav>
+</header>
+
+<!-- HUD -->
+<div class="hud" id="hud">
+  <span class="hud__num" id="hudNum">I</span>
+  <span class="hud__name" id="hudName">TODAY</span>
+</div>
+
+<!-- Progress -->
+<div class="progress" id="progress">
+  <div class="progress__fill" id="progressFill"></div>
+  <div class="progress__tick" style="top:11%"></div>
+  <div class="progress__tick" style="top:17%"></div>
+  <div class="progress__tick" style="top:65%"></div>
+  <div class="progress__tick" style="top:72%"></div>
+  <div class="progress__tick" style="top:92%"></div>
+</div>
+
+<!-- Sound toggle — defaults to OFF until user clicks -->
+<button class="sound" id="sound" data-on="false" type="button">
+  <span class="sound__dot"></span>
+  <span class="sound__label">SOUND OFF</span>
+</button>
+
+<!-- Scenes (text overlays) — each has data-from / data-to and lives in fixed layer -->
+<div class="scenes" id="scenes">
+
+  <!-- ACT 0 — The 3D geometry intro — "Step inside" -->
+  <div class="scene scene--door" data-from="-0.02" data-to="0.075">
+    <div class="scene__inner">
+      <span class="scene__num">AIQ STUDIO</span>
+      <h2 class="scene__line">A private intelligence,<br/>for a single brand.</h2>
+      <p class="scene__sub">Scroll to enter the workshop.</p>
+    </div>
+  </div>
+
+  <!-- ACT I — Today fragmented -->
+  <div class="scene" data-from="0.085" data-to="0.135">
+    <div class="scene__inner">
+      <span class="scene__num">I · TODAY</span>
+      <h2 class="scene__line">Creative intelligence today is <em>fragmented</em>.</h2>
+      <p class="scene__sub">A thousand minds. A thousand tools. None speak together.</p>
+    </div>
+  </div>
+
+  <!-- ACT II — Florence 1450 — the Medici -->
+  <div class="scene" data-from="0.140" data-to="0.200">
+    <div class="scene__inner">
+      <span class="scene__num">II · FLORENCE · 1450</span>
+      <h2 class="scene__line">In 1450, the Medici did something <em>history had not seen</em>.</h2>
+      <p class="scene__sub">They did not invent. They <em>gathered</em> — under one roof, the greatest minds of an age.</p>
+    </div>
+  </div>
+
+  <!-- ACT III — The Masters: each named with one line -->
+  <div class="scene" data-from="0.205" data-to="0.260">
+    <div class="scene__inner">
+      <span class="scene__num">III · THE MASTERS</span>
+      <h2 class="scene__line">Fra Angelico gave divinity <em>weight</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.265" data-to="0.315">
+    <div class="scene__inner">
+      <h2 class="scene__line">Filippo Lippi painted with a <em>quiet, human tenderness</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.320" data-to="0.370">
+    <div class="scene__inner">
+      <h2 class="scene__line">Donatello freed sculpture <em>from the wall</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.375" data-to="0.425">
+    <div class="scene__inner">
+      <h2 class="scene__line">Della Robbia invented a <em>new colour for clay</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.430" data-to="0.480">
+    <div class="scene__inner">
+      <h2 class="scene__line">Mino da Fiesole carved <em>a man's mind</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.485" data-to="0.535">
+    <div class="scene__inner">
+      <h2 class="scene__line">Verrocchio taught <em>both Leonardo and Botticelli</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.540" data-to="0.590">
+    <div class="scene__inner">
+      <h2 class="scene__line">Pollaiuolo made movement <em>a science</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.595" data-to="0.645">
+    <div class="scene__inner">
+      <h2 class="scene__line">Ghirlandaio taught a generation — <em>including Michelangelo</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.650" data-to="0.700">
+    <div class="scene__inner">
+      <h2 class="scene__line">Botticelli's line <em>dreamed before it described</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.705" data-to="0.755">
+    <div class="scene__inner">
+      <h2 class="scene__line">Leonardo da Vinci <em>could not stop looking</em>.</h2>
+    </div>
+  </div>
+
+  <div class="scene" data-from="0.760" data-to="0.815">
+    <div class="scene__inner">
+      <h2 class="scene__line">Filippino Lippi inherited his father's tenderness, and <em>added music</em>.</h2>
+    </div>
+  </div>
+
+  <!-- ACT IV — The Renaissance happened -->
+  <div class="scene" data-from="0.820" data-to="0.875">
+    <div class="scene__inner">
+      <span class="scene__num">IV · THE RESULT</span>
+      <h2 class="scene__line">Alone, each made a work.<br/>Together — they made <em>an age</em>.</h2>
+      <p class="scene__sub">This was the Renaissance. Not improvement. <em>Transformation</em>.</p>
+    </div>
+  </div>
+
+  <!-- ACT V — Bronzino's Cosimo Medici: "We are the Medici of now" -->
+  <div class="scene" data-from="0.880" data-to="0.945">
+    <div class="scene__inner">
+      <span class="scene__num">V · 2026</span>
+      <h2 class="scene__line">Five centuries later — <em>we are the Medici of now</em>.</h2>
+      <p class="scene__sub">AIQ Studio gathers every discipline under one private roof, for one brand at a time.</p>
+    </div>
+  </div>
+
+  <!-- ACT VI — The Invitation — clean, centered, dark backdrop -->
+  <div class="scene scene--invite" data-from="0.948" data-to="1.001">
+    <div class="scene__inner">
+      <span class="scene__num">VI · THE INVITATION</span>
+      <h2 class="scene__line">The Medicis created a Renaissance.<br/><em>We create yours.</em></h2>
+      <a href="studio.html" class="scene__cta">
+        <span>Enter AIQ Studio</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<!-- Master name plate — appears for each master scene -->
+<div class="nameplate" id="nameplate">
+  <h3 class="nameplate__name" id="npName"></h3>
+  <div class="nameplate__life" id="npLife"></div>
+  <p class="nameplate__work" id="npWork"></p>
+</div>
+
+
+
+<!-- INDEX overlay -->
+<div class="index-panel" id="indexPanel">
+  <button class="index-panel__esc" type="button" id="indexEsc" aria-label="Close">ESC</button>
+  <ul class="index-panel__list">
+    <li><button class="index-panel__item" type="button" data-target="0.02"><span class="index-panel__num">I</span><span>Today, Fragmented</span></button></li>
+    <li><button class="index-panel__item" type="button" data-target="0.13"><span class="index-panel__num">II</span><span>Florence — 1450</span></button></li>
+    <li><button class="index-panel__item" type="button" data-target="0.20"><span class="index-panel__num">III</span><span>The Masters</span></button></li>
+    <li><button class="index-panel__item" type="button" data-target="0.67"><span class="index-panel__num">IV</span><span>The Renaissance</span></button></li>
+    <li><button class="index-panel__item" type="button" data-target="0.80"><span class="index-panel__num">V</span><span>The Brain — Yours</span></button></li>
+    <li><button class="index-panel__item" type="button" data-target="0.96"><span class="index-panel__num">VI</span><span>The Invitation</span></button></li>
+  </ul>
+</div>
+
+<!-- Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Grain -->
+<div class="grain"></div>
+
+
+
+<!-- Scroll runway -->
+<div class="scroll-track"></div>
+
+<!-- Three.js for the 3D Renaissance geometry intro -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+<script>
+(function() {
+  // ===== Three.js Renaissance geometry — the 3D Brain + disciplines =====
+  const canvas = document.getElementById('threeStage');
+  let threeScene, threeCam, threeRenderer;
+  let brain, satellites = [];
+  function initThree() {
+    threeScene = new THREE.Scene();
+    threeCam = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 100);
+    threeCam.position.set(0, 0, 8);
+
+    threeRenderer = new THREE.WebGLRenderer({
+      canvas: canvas, antialias: true, alpha: true,
+      powerPreference: 'high-performance'
+    });
+    threeRenderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    threeRenderer.setSize(window.innerWidth, window.innerHeight, false);
+
+    // Old-money palette: aged bronze patina + verdigris accent (no shiny gold)
+    threeScene.add(new THREE.AmbientLight(0x2a2418, 0.55));
+    const key = new THREE.DirectionalLight(0xe6dfc6, 0.95);
+    key.position.set(4, 5, 6);
+    threeScene.add(key);
+    const fill = new THREE.PointLight(0x9c8458, 1.1, 25);
+    fill.position.set(-4, -1, 4);
+    threeScene.add(fill);
+    const rim = new THREE.PointLight(0x4a5048, 0.55, 22);
+    rim.position.set(2, 4, -5);
+    threeScene.add(rim);
+    const accent = new THREE.PointLight(0x7c6a4a, 0.55, 14);
+    accent.position.set(0, -3, 3);
+    threeScene.add(accent);
+
+    // Aged-bronze materials — muted, patina'd, never shiny
+    const matBrain = new THREE.MeshStandardMaterial({
+      color: 0x9c8458, metalness: 0.55, roughness: 0.55,
+      emissive: 0x2a2418, emissiveIntensity: 0.12
+    });
+    const matSat = new THREE.MeshStandardMaterial({
+      color: 0x7c6a4a, metalness: 0.50, roughness: 0.62,
+      emissive: 0x1a1410, emissiveIntensity: 0.10
+    });
+    const matSatLight = new THREE.MeshStandardMaterial({
+      color: 0xc4baa2, metalness: 0.35, roughness: 0.58,
+      emissive: 0x2a2418, emissiveIntensity: 0.14
+    });
+    const matSatDeep = new THREE.MeshStandardMaterial({
+      color: 0x4a5048, metalness: 0.60, roughness: 0.50,  // verdigris
+      emissive: 0x1a1410, emissiveIntensity: 0.10
+    });
+    const matEdge = new THREE.LineBasicMaterial({
+      color: 0xc4baa2, transparent: true, opacity: 0.30
+    });
+    const matEdgeBright = new THREE.LineBasicMaterial({
+      color: 0xe8dfc7, transparent: true, opacity: 0.42
+    });
+
+    // ===== Procedural textures =====
+    // On mobile, drastically reduce texture size to avoid iOS Safari OOM crash
+    const _isMobile = window.innerWidth <= 880 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    const TEX = _isMobile ? 512 : 4096;
+    const TEX_M = _isMobile ? 384 : 2048;
+    function makeTex(size, draw) {
+      const c = document.createElement('canvas');
+      c.width = c.height = size;
+      const ctx = c.getContext('2d');
+      draw(ctx, size);
+      const tex = new THREE.CanvasTexture(c);
+      tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+      return tex;
+    }
+
+    // SUN texture — turbulent plasma surface — 16k
+    const sunTex = makeTex(TEX, (ctx, S) => {
+      const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+      g.addColorStop(0, '#fff0c0');
+      g.addColorStop(0.4, '#fbd478');
+      g.addColorStop(0.75, '#e2a445');
+      g.addColorStop(1, '#a36420');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
+      // Granulation / convection cells — many more
+      for (let i = 0; i < 8000; i++) {
+        const x = Math.random() * S, y = Math.random() * S;
+        const r = 6 + Math.random() * 32;
+        const a = 0.10 + Math.random() * 0.24;
+        const tone = Math.random() < 0.5 ? '255,210,140' : '170,80,30';
+        const gg = ctx.createRadialGradient(x, y, 0, x, y, r);
+        gg.addColorStop(0, `rgba(${tone},${a})`);
+        gg.addColorStop(1, `rgba(${tone},0)`);
+        ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+      }
+      // Sunspots
+      for (let i = 0; i < 60; i++) {
+        const x = Math.random() * S, y = Math.random() * S;
+        const r = 18 + Math.random() * 60;
+        const gg = ctx.createRadialGradient(x, y, 0, x, y, r);
+        gg.addColorStop(0, 'rgba(60,20,0,0.75)');
+        gg.addColorStop(0.6, 'rgba(120,60,10,0.32)');
+        gg.addColorStop(1, 'rgba(120,60,10,0)');
+        ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+      }
+      // Bright flares
+      for (let i = 0; i < 30; i++) {
+        const x = Math.random() * S, y = Math.random() * S;
+        const r = 8 + Math.random() * 32;
+        const gg = ctx.createRadialGradient(x, y, 0, x, y, r);
+        gg.addColorStop(0, 'rgba(255,250,220,0.65)');
+        gg.addColorStop(1, 'rgba(255,250,220,0)');
+        ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2); ctx.fill();
+      }
+    });
+
+    // MERCURY — heavily cratered gray-tan — 16k
+    const mercuryTex = makeTex(TEX, (ctx, S) => {
+      // Base
+      const base = ctx.createLinearGradient(0, 0, 0, S);
+      base.addColorStop(0, '#7a6c56'); base.addColorStop(0.5, '#8a7c66'); base.addColorStop(1, '#6a5d48');
+      ctx.fillStyle = base; ctx.fillRect(0,0,S,S);
+
+      // Regolith dust texture — fine noise
+      for (let i = 0; i < 30000; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 0.5 + Math.random() * 2;
+        const shade = 60 + Math.random()*80;
+        ctx.fillStyle = `rgba(${shade},${shade-10},${shade-20},${0.2 + Math.random() * 0.4})`;
+        ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+
+      // Large impact basins (Caloris-style) with proper rim shading
+      for (let i = 0; i < 60; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 50 + Math.random() * 180;
+        // Dark center
+        const dark = ctx.createRadialGradient(x, y, 0, x, y, r * 0.6);
+        dark.addColorStop(0, 'rgba(40,30,20,0.75)');
+        dark.addColorStop(1, 'rgba(40,30,20,0)');
+        ctx.fillStyle = dark; ctx.beginPath(); ctx.arc(x,y,r*0.6,0,Math.PI*2); ctx.fill();
+        // Bright rim (ejecta)
+        ctx.lineWidth = 2 + Math.random() * 4;
+        ctx.strokeStyle = `rgba(230,210,180,${0.35 + Math.random() * 0.25})`;
+        ctx.beginPath(); ctx.arc(x,y,r*0.85,0,Math.PI*2); ctx.stroke();
+        // Outer ejecta blanket
+        const ejecta = ctx.createRadialGradient(x, y, r*0.85, x, y, r);
+        ejecta.addColorStop(0, 'rgba(200,180,150,0.30)');
+        ejecta.addColorStop(1, 'rgba(200,180,150,0)');
+        ctx.fillStyle = ejecta; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+
+      // Medium craters
+      for (let i = 0; i < 600; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 8 + Math.random() * 50;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(50,40,28,0.7)');
+        g.addColorStop(0.55, 'rgba(140,120,95,0.5)');
+        g.addColorStop(0.85, 'rgba(220,200,170,0.45)');
+        g.addColorStop(1, 'rgba(70,60,45,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+
+      // Crater chains and ray systems
+      for (let i = 0; i < 30; i++) {
+        const cx = Math.random()*S, cy = Math.random()*S;
+        const rays = 6 + Math.floor(Math.random() * 8);
+        for (let r = 0; r < rays; r++) {
+          const ang = (r / rays) * Math.PI * 2 + Math.random() * 0.3;
+          const len = 80 + Math.random() * 220;
+          const grd = ctx.createLinearGradient(cx, cy, cx + Math.cos(ang)*len, cy + Math.sin(ang)*len);
+          grd.addColorStop(0, 'rgba(240,225,200,0.4)');
+          grd.addColorStop(1, 'rgba(240,225,200,0)');
+          ctx.strokeStyle = grd;
+          ctx.lineWidth = 1 + Math.random() * 2;
+          ctx.beginPath();
+          ctx.moveTo(cx, cy);
+          ctx.lineTo(cx + Math.cos(ang)*len, cy + Math.sin(ang)*len);
+          ctx.stroke();
+        }
+      }
+
+      // Small impact dots
+      for (let i = 0; i < 4000; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 0.5 + Math.random()*3;
+        ctx.fillStyle = `rgba(${30+Math.random()*40},${20+Math.random()*30},${15+Math.random()*30},${0.5+Math.random()*0.4})`;
+        ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+
+      // Highland streaks (linear features)
+      for (let i = 0; i < 200; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const len = 30 + Math.random() * 80;
+        const ang = Math.random() * Math.PI * 2;
+        ctx.strokeStyle = `rgba(180,160,130,${0.15 + Math.random() * 0.2})`;
+        ctx.lineWidth = 0.5 + Math.random();
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + Math.cos(ang) * len, y + Math.sin(ang) * len);
+        ctx.stroke();
+      }
+    });
+
+    // VENUS — thick cream/peach cloud bands — 16k
+    const venusTex = makeTex(TEX, (ctx, S) => {
+      const g = ctx.createLinearGradient(0, 0, 0, S);
+      g.addColorStop(0, '#e8c89a'); g.addColorStop(0.5, '#d8a872'); g.addColorStop(1, '#c89865');
+      ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+      // Many horizontal swirl bands
+      for (let i = 0; i < 800; i++) {
+        const y = Math.random() * S;
+        const h = 6 + Math.random()*60;
+        ctx.fillStyle = `rgba(${200+Math.random()*40},${160+Math.random()*30},${100+Math.random()*30},${0.10+Math.random()*0.22})`;
+        ctx.fillRect(0, y, S, h);
+      }
+      // Cyclonic swirls
+      for (let i = 0; i < 500; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 40 + Math.random()*220;
+        const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g2.addColorStop(0, 'rgba(255,230,180,0.22)');
+        g2.addColorStop(1, 'rgba(255,230,180,0)');
+        ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Dark thermal patches
+      for (let i = 0; i < 240; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 20 + Math.random()*80;
+        const g3 = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g3.addColorStop(0, 'rgba(120,70,30,0.20)');
+        g3.addColorStop(1, 'rgba(120,70,30,0)');
+        ctx.fillStyle = g3; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Acid cloud streaks
+      for (let i = 0; i < 1200; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const w = 40 + Math.random()*200;
+        ctx.fillStyle = `rgba(${240+Math.random()*15},${210+Math.random()*20},${160+Math.random()*30},${0.06+Math.random()*0.10})`;
+        ctx.fillRect(x, y, w, 1+Math.random()*3);
+      }
+    });
+
+    // EARTH — blue oceans, green/brown continents, white clouds — high detail
+    const earthTex = makeTex(TEX, (ctx, S) => {
+      // Deep ocean base
+      const oc = ctx.createLinearGradient(0, 0, 0, S);
+      oc.addColorStop(0, '#0e3358'); oc.addColorStop(0.3, '#1a5078');
+      oc.addColorStop(0.5, '#2670a0'); oc.addColorStop(0.7, '#1a5078');
+      oc.addColorStop(1, '#0e3358');
+      ctx.fillStyle = oc; ctx.fillRect(0,0,S,S);
+      // Ocean depth variation
+      for (let i = 0; i < 600; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 30 + Math.random()*180;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        const dark = Math.random() < 0.5;
+        g.addColorStop(0, dark ? 'rgba(10,30,60,0.45)' : 'rgba(80,160,200,0.30)');
+        g.addColorStop(1, 'rgba(0,0,0,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      function continent(cx, cy, sx, sy, color, density) {
+        density = density || 120;
+        for (let i = 0; i < density; i++) {
+          const a = Math.random() * Math.PI * 2;
+          const r = Math.random() * 1;
+          const x = cx + Math.cos(a) * sx * (0.5 + r*0.5);
+          const y = cy + Math.sin(a) * sy * (0.5 + r*0.5);
+          const sz = 20 + Math.random() * 60;
+          const g = ctx.createRadialGradient(x, y, 0, x, y, sz);
+          g.addColorStop(0, color);
+          g.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,sz,0,Math.PI*2); ctx.fill();
+        }
+      }
+      // Africa
+      continent(S*0.49, S*0.45, S*0.07, S*0.18, 'rgba(150,130,70,0.85)', 200);
+      continent(S*0.49, S*0.40, S*0.06, S*0.05, 'rgba(80,120,55,0.80)', 80);
+      // Europe
+      continent(S*0.50, S*0.27, S*0.05, S*0.06, 'rgba(100,130,65,0.85)', 90);
+      // Asia (broad)
+      continent(S*0.68, S*0.30, S*0.13, S*0.10, 'rgba(110,135,65,0.85)', 200);
+      continent(S*0.78, S*0.38, S*0.04, S*0.04, 'rgba(170,140,80,0.80)', 60);
+      // Australia
+      continent(S*0.82, S*0.62, S*0.06, S*0.05, 'rgba(180,150,80,0.85)', 70);
+      // Americas
+      continent(S*0.22, S*0.30, S*0.05, S*0.08, 'rgba(100,140,75,0.85)', 100); // N America
+      continent(S*0.27, S*0.55, S*0.05, S*0.12, 'rgba(80,130,55,0.85)', 110); // S America
+      // Greenland
+      continent(S*0.30, S*0.18, S*0.04, S*0.03, 'rgba(230,235,240,0.75)', 40);
+      // Antarctica
+      ctx.fillStyle = 'rgba(240,245,250,0.85)'; ctx.fillRect(0, S*0.93, S, S*0.07);
+      // Mountain ranges (darker green-brown)
+      for (let i = 0; i < 400; i++) {
+        const x = Math.random()*S, y = S*0.20 + Math.random()*S*0.55;
+        const r = 4 + Math.random()*14;
+        ctx.fillStyle = `rgba(70,55,30,${0.35 + Math.random()*0.4})`;
+        ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Desert (Sahara/Arabia)
+      const desert = ctx.createRadialGradient(S*0.52, S*0.38, 0, S*0.52, S*0.38, S*0.07);
+      desert.addColorStop(0, 'rgba(220,180,110,0.55)');
+      desert.addColorStop(1, 'rgba(220,180,110,0)');
+      ctx.fillStyle = desert; ctx.beginPath(); ctx.arc(S*0.52, S*0.38, S*0.07, 0, Math.PI*2); ctx.fill();
+      // Cloud cover — many wisps with proper shading
+      for (let i = 0; i < 2400; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 8 + Math.random()*80;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(255,255,255,0.45)');
+        g.addColorStop(0.6, 'rgba(255,255,255,0.18)');
+        g.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Hurricane / spiral storms
+      for (let i = 0; i < 6; i++) {
+        const cx = Math.random()*S, cy = S*0.25 + Math.random()*S*0.50;
+        const turns = 1.5;
+        for (let a = 0; a < Math.PI * 2 * turns; a += 0.05) {
+          const rr = (a / (Math.PI * 2 * turns)) * 60;
+          const x = cx + Math.cos(a) * rr;
+          const y = cy + Math.sin(a) * rr;
+          const sz = 4 + (1 - a / (Math.PI*2*turns)) * 16;
+          const g = ctx.createRadialGradient(x, y, 0, x, y, sz);
+          g.addColorStop(0, 'rgba(255,255,255,0.55)');
+          g.addColorStop(1, 'rgba(255,255,255,0)');
+          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,sz,0,Math.PI*2); ctx.fill();
+        }
+      }
+    });
+
+    // MARS — rusty red with darker valleys, craters, and polar caps
+    const marsTex = makeTex(TEX_M, (ctx, S) => {
+      const g = ctx.createLinearGradient(0,0,0,S);
+      g.addColorStop(0, '#d6a878'); g.addColorStop(0.5, '#b46838'); g.addColorStop(1, '#8a3a18');
+      ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+      // Dark valleys (Valles Marineris-style)
+      for (let i = 0; i < 400; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 10 + Math.random()*60;
+        const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g2.addColorStop(0, 'rgba(70,30,10,0.55)');
+        g2.addColorStop(1, 'rgba(70,30,10,0)');
+        ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Crater field
+      for (let i = 0; i < 300; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 2 + Math.random()*10;
+        ctx.fillStyle = `rgba(60,30,12,0.5)`;
+        ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Olympus Mons hint — a big light circle
+      const om = ctx.createRadialGradient(S*0.5, S*0.45, 0, S*0.5, S*0.45, S*0.06);
+      om.addColorStop(0, 'rgba(220,150,90,0.6)');
+      om.addColorStop(1, 'rgba(220,150,90,0)');
+      ctx.fillStyle = om; ctx.beginPath(); ctx.arc(S*0.5, S*0.45, S*0.06, 0, Math.PI*2); ctx.fill();
+      // Polar ice caps
+      const cap = ctx.createLinearGradient(0,0,0,S*0.10);
+      cap.addColorStop(0, 'rgba(255,240,230,0.92)'); cap.addColorStop(1, 'rgba(255,240,230,0)');
+      ctx.fillStyle = cap; ctx.fillRect(0,0,S,S*0.10);
+      const cap2 = ctx.createLinearGradient(0, S*0.90, 0, S);
+      cap2.addColorStop(0, 'rgba(255,240,230,0)'); cap2.addColorStop(1, 'rgba(255,240,230,0.92)');
+      ctx.fillStyle = cap2; ctx.fillRect(0, S*0.90, S, S*0.10);
+    });
+
+    // JUPITER — horizontal cream/orange bands + Great Red Spot — 16k
+    const jupiterTex = makeTex(TEX, (ctx, S) => {
+      const bands = [
+        ['#e8d8b0','#c8a878', 0.0, 0.05],
+        ['#a87858','#583820', 0.05, 0.13],
+        ['#e0c8a0','#b89870', 0.13, 0.22],
+        ['#c89868','#a07050', 0.22, 0.30],
+        ['#e8d4a8','#c8a878', 0.30, 0.42],
+        ['#a06850','#704028', 0.42, 0.50],
+        ['#d8b888','#a08858', 0.50, 0.58],
+        ['#b88058','#704830', 0.58, 0.66],
+        ['#e0c8a0','#b89870', 0.66, 0.78],
+        ['#a07050','#603828', 0.78, 0.86],
+        ['#d8c098','#a88860', 0.86, 1.0]
+      ];
+      bands.forEach(b => {
+        const y1 = b[2]*S, y2 = b[3]*S;
+        const g = ctx.createLinearGradient(0, y1, 0, y2);
+        g.addColorStop(0, b[0]); g.addColorStop(1, b[1]);
+        ctx.fillStyle = g; ctx.fillRect(0, y1, S, y2-y1);
+      });
+      // Turbulence — many streaks
+      for (let i = 0; i < 4000; i++) {
+        const y = Math.random()*S;
+        const x = Math.random()*S;
+        const w = 60 + Math.random()*420;
+        ctx.fillStyle = `rgba(${200+Math.random()*55},${160+Math.random()*40},${100+Math.random()*40},${0.05+Math.random()*0.15})`;
+        ctx.fillRect(x, y, w, 1+Math.random()*5);
+      }
+      // Storm vortices
+      for (let i = 0; i < 100; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 30 + Math.random()*80;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(80,40,20,0.45)');
+        g.addColorStop(1, 'rgba(80,40,20,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Bright cloud bumps
+      for (let i = 0; i < 600; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 20 + Math.random()*70;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(252,234,196,0.30)');
+        g.addColorStop(1, 'rgba(252,234,196,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Great Red Spot
+      const gx = S*0.7, gy = S*0.55, gw = S*0.10, gh = S*0.06;
+      const grs = ctx.createRadialGradient(gx, gy, 0, gx, gy, gw);
+      grs.addColorStop(0, 'rgba(190,90,40,0.92)');
+      grs.addColorStop(0.45, 'rgba(160,60,25,0.7)');
+      grs.addColorStop(0.85, 'rgba(140,50,20,0.3)');
+      grs.addColorStop(1, 'rgba(140,50,20,0)');
+      ctx.fillStyle = grs; ctx.beginPath(); ctx.ellipse(gx, gy, gw, gh, 0, 0, Math.PI*2); ctx.fill();
+      // Spiral lines inside the Spot
+      for (let r = 0; r < 8; r++) {
+        ctx.strokeStyle = `rgba(220,140,70,${0.25 - r*0.025})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.ellipse(gx, gy, gw*(0.4+r*0.08), gh*(0.4+r*0.08), 0, 0, Math.PI*2);
+        ctx.stroke();
+      }
+    });
+
+    // SATURN — pale cream bands, 16k
+    const saturnTex = makeTex(TEX, (ctx, S) => {
+      const bands = [
+        ['#f0e0c0','#e0cc9a', 0, 0.08],
+        ['#e6d2a8','#d4be8e', 0.08, 0.18],
+        ['#d4be8e','#b8a274', 0.18, 0.26],
+        ['#dbc89c','#c4ad84', 0.26, 0.34],
+        ['#e8d8b0','#cebb8e', 0.34, 0.42],
+        ['#d2bd8a','#b6a072', 0.42, 0.50],
+        ['#dccfa0','#bea88a', 0.50, 0.58],
+        ['#c8b384','#a89060', 0.58, 0.68],
+        ['#dcc89a','#b89870', 0.68, 0.78],
+        ['#c0a878','#a08858', 0.78, 0.86],
+        ['#d4bd8c','#b09870', 0.86, 0.93],
+        ['#b8a070','#907858', 0.93, 1.0]
+      ];
+      bands.forEach(b => {
+        const y1 = b[2]*S, y2 = b[3]*S;
+        const g = ctx.createLinearGradient(0, y1, 0, y2);
+        g.addColorStop(0, b[0]); g.addColorStop(1, b[1]);
+        ctx.fillStyle = g; ctx.fillRect(0, y1, S, y2-y1);
+      });
+      // Atmospheric haze strands — many
+      for (let i = 0; i < 4000; i++) {
+        const y = Math.random()*S;
+        const x = Math.random()*S;
+        const w = 80 + Math.random()*420;
+        const tone = `${220+Math.random()*30},${190+Math.random()*30},${140+Math.random()*30}`;
+        ctx.fillStyle = `rgba(${tone},${0.04+Math.random()*0.12})`;
+        ctx.fillRect(x, y, w, 1+Math.random()*3);
+      }
+      // Subtle storm spots
+      for (let i = 0; i < 40; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 30 + Math.random()*70;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(120,90,50,0.30)');
+        g.addColorStop(1, 'rgba(120,90,50,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Bright cloud highlights
+      for (let i = 0; i < 200; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 20 + Math.random()*60;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g.addColorStop(0, 'rgba(252,234,196,0.32)');
+        g.addColorStop(1, 'rgba(252,234,196,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Hex pole hint at top
+      const hexg = ctx.createLinearGradient(0, 0, 0, S*0.06);
+      hexg.addColorStop(0, 'rgba(160,130,80,0.55)');
+      hexg.addColorStop(1, 'rgba(160,130,80,0)');
+      ctx.fillStyle = hexg; ctx.fillRect(0, 0, S, S*0.06);
+    });
+
+    // URANUS — pale cyan-green with subtle banding — 16k
+    const uranusTex = makeTex(TEX, (ctx, S) => {
+      const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+      g.addColorStop(0, '#c0e4dc'); g.addColorStop(1, '#5a8898');
+      ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+      // Faint vertical bands (Uranus rotates on its side)
+      for (let i = 0; i < 600; i++) {
+        const x = Math.random()*S;
+        const w = 2 + Math.random()*8;
+        ctx.fillStyle = `rgba(${150+Math.random()*60},${200+Math.random()*40},${190+Math.random()*40},${0.04+Math.random()*0.06})`;
+        ctx.fillRect(x, 0, w, S);
+      }
+      // Cloud bumps
+      for (let i = 0; i < 800; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 18 + Math.random()*100;
+        const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g2.addColorStop(0, 'rgba(220,240,235,0.15)');
+        g2.addColorStop(1, 'rgba(220,240,235,0)');
+        ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Subtle ring shadow line
+      ctx.fillStyle = 'rgba(50,80,90,0.18)';
+      ctx.fillRect(0, S*0.48, S, S*0.04);
+    });
+
+    // NEPTUNE — deep cobalt blue with storms — 16k
+    const neptuneTex = makeTex(TEX, (ctx, S) => {
+      const g = ctx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S*0.7);
+      g.addColorStop(0, '#3a60a8'); g.addColorStop(1, '#0e2858');
+      ctx.fillStyle = g; ctx.fillRect(0,0,S,S);
+      // Bands
+      for (let i = 0; i < 800; i++) {
+        const y = Math.random()*S;
+        ctx.fillStyle = `rgba(${70+Math.random()*60},${110+Math.random()*60},${180+Math.random()*40},${0.06+Math.random()*0.10})`;
+        ctx.fillRect(0, y, S, 4+Math.random()*14);
+      }
+      // High-altitude white clouds (Neptune's signature)
+      for (let i = 0; i < 400; i++) {
+        const x = Math.random()*S, y = Math.random()*S;
+        const r = 12 + Math.random()*40;
+        const g2 = ctx.createRadialGradient(x, y, 0, x, y, r);
+        g2.addColorStop(0, 'rgba(220,235,255,0.45)');
+        g2.addColorStop(1, 'rgba(220,235,255,0)');
+        ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      // Great Dark Spot
+      const sx = S*0.35, sy = S*0.45, sr = S*0.10;
+      const sg = ctx.createRadialGradient(sx, sy, 0, sx, sy, sr);
+      sg.addColorStop(0, 'rgba(15,25,70,0.85)');
+      sg.addColorStop(0.6, 'rgba(15,25,70,0.4)');
+      sg.addColorStop(1, 'rgba(15,25,70,0)');
+      ctx.fillStyle = sg; ctx.beginPath(); ctx.ellipse(sx, sy, sr*1.3, sr*0.8, 0, 0, Math.PI*2); ctx.fill();
+      // Bright cloud above spot
+      const cx = S*0.30, cy = S*0.40, cr = S*0.03;
+      const cg = ctx.createRadialGradient(cx, cy, 0, cx, cy, cr);
+      cg.addColorStop(0, 'rgba(240,250,255,0.7)');
+      cg.addColorStop(1, 'rgba(240,250,255,0)');
+      ctx.fillStyle = cg; ctx.beginPath(); ctx.arc(cx, cy, cr, 0, Math.PI*2); ctx.fill();
+    });
+
+    // ===== REAL SOLAR SYSTEM — Sun (AIQ Studio) + planets =====
+
+    // SUN — emissive textured sphere — +15%
+    const sunGeo = new THREE.SphereGeometry(1.52, 96, 96);
+    const sunMat = new THREE.MeshBasicMaterial({
+      map: sunTex
+    });
+    brain = new THREE.Mesh(sunGeo, sunMat);
+    threeScene.add(brain);
+
+    // Sun's point light — bright, lights all planets
+    const sunLight = new THREE.PointLight(0xfde7b6, 4.0, 60, 1.2);
+    sunLight.position.set(0, 0, 0);
+    threeScene.add(sunLight);
+
+    // Sun corona — multi-layer sprite stack
+    const coronaTex = (function() {
+      const c = document.createElement('canvas');
+      c.width = c.height = 512;
+      const ctx = c.getContext('2d');
+      const g = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
+      g.addColorStop(0,    'rgba(255, 240, 180, 1.0)');
+      g.addColorStop(0.08, 'rgba(253, 215, 130, 0.85)');
+      g.addColorStop(0.25, 'rgba(226, 160, 70, 0.40)');
+      g.addColorStop(0.55, 'rgba(180, 100, 40, 0.12)');
+      g.addColorStop(1,    'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, 512, 512);
+      return new THREE.CanvasTexture(c);
+    })();
+    const corona = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: coronaTex, transparent: true,
+      blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0.95
+    }));
+    corona.scale.set(5.5, 5.5, 1);
+    threeScene.add(corona);
+    window.__aiqCorona = corona;
+    // Inner halo
+    const coronaInner = new THREE.Sprite(corona.material.clone());
+    coronaInner.scale.set(2.3, 2.3, 1);
+    coronaInner.material.opacity = 0.85;
+    threeScene.add(coronaInner);
+    window.__aiqCoronaInner = coronaInner;
+
+    // Mercury -5%, Venus/Earth +5%, Mars +5%, Saturn -5%. All others same.
+    const planetData = [
+      { size: 0.295, dist: 2.6,  speed: 1.30, tilt: 0.02, tex: mercuryTex, name: 'Mercury', rough: 0.85 },
+      { size: 0.58,  dist: 4.2,  speed: 0.95, tilt: 0.03, tex: venusTex,   name: 'Venus',   rough: 0.55 },
+      { size: 0.63,  dist: 5.8,  speed: 0.78, tilt: 0.0,  tex: earthTex,   name: 'Earth',   rough: 0.50, hasMoon: true },
+      { size: 0.49,  dist: 7.4,  speed: 0.62, tilt: 0.04, tex: marsTex,    name: 'Mars',    rough: 0.75 },
+      { size: 1.17,  dist: 9.6,  speed: 0.34, tilt: 0.02, tex: jupiterTex, name: 'Jupiter', rough: 0.45 },
+      { size: 0.94,  dist: 12.2, speed: 0.25, tilt: 0.05, tex: saturnTex,  name: 'Saturn',  rings: true, rough: 0.50 },
+      { size: 0.70,  dist: 14.6, speed: 0.18, tilt: 0.09, tex: uranusTex,  name: 'Uranus',  rough: 0.55 },
+      { size: 0.68,  dist: 17.0, speed: 0.13, tilt: -0.06, tex: neptuneTex, name: 'Neptune', rough: 0.55 }
+    ];
+
+    planetData.forEach((p, idx) => {
+      const geo = new THREE.SphereGeometry(p.size, 64, 64);
+      const mat = new THREE.MeshStandardMaterial({
+        map: p.tex,
+        roughness: p.rough,
+        metalness: 0.0
+      });
+      const planet = new THREE.Mesh(geo, mat);
+      planet.userData = {
+        dist: p.dist, speed: p.speed, tilt: p.tilt,
+        ang: idx * 0.7 + Math.random() * Math.PI,
+        spin: 0.4 + Math.random() * 1.0,
+        name: p.name
+      };
+      // Axial tilt for the planet itself (not the orbit)
+      planet.rotation.z = (Math.random() - 0.5) * 0.4;
+      threeScene.add(planet);
+      satellites.push(planet);
+
+      // Earth's Moon
+      if (p.hasMoon) {
+        const moonGeo = new THREE.SphereGeometry(p.size * 0.27, 16, 16);
+        const moonMat = new THREE.MeshStandardMaterial({
+          map: mercuryTex, roughness: 0.9, metalness: 0.0
+        });
+        const moon = new THREE.Mesh(moonGeo, moonMat);
+        moon.userData = { moonOf: planet, dist: p.size * 2.2, ang: 0, speed: 3.0 };
+        threeScene.add(moon);
+        window.__aiqMoon = moon;
+      }
+
+      // Saturn's rings — softer, more varied, with translucent gaps
+      if (p.rings) {
+        const ringTex = makeTex(TEX_M, (ctx, S) => {
+          // Clear with full transparency
+          ctx.clearRect(0, 0, S, S);
+          for (let i = 0; i < S; i++) {
+            const t = i / S;
+            // Outer fade
+            let edgeFade = Math.min(1, t / 0.06) * Math.min(1, (1 - t) / 0.10);
+            // Bands density (varies smoothly with sine + random)
+            let density = 0.32 + 0.18 * Math.sin(t * 24) + 0.10 * Math.sin(t * 60);
+            // Cassini divisions (multiple gaps)
+            if (Math.abs(t - 0.30) < 0.018) density *= 0.10;  // major Cassini gap
+            if (Math.abs(t - 0.62) < 0.012) density *= 0.20;  // Encke
+            if (Math.abs(t - 0.42) < 0.008) density *= 0.35;
+            if (Math.abs(t - 0.50) < 0.006) density *= 0.45;
+            if (Math.abs(t - 0.18) < 0.006) density *= 0.50;
+            if (Math.abs(t - 0.78) < 0.008) density *= 0.40;
+            density = Math.max(0, density) * edgeFade;
+            const baseR = 200 + Math.sin(i * 0.4) * 18 + (Math.random() - 0.5) * 12;
+            const baseG = baseR - 18;
+            const baseB = baseR - 70;
+            ctx.fillStyle = `rgba(${baseR},${baseG},${baseB},${density.toFixed(3)})`;
+            ctx.fillRect(0, i, S, 1);
+          }
+        });
+        const ringGeo = new THREE.RingGeometry(p.size * 1.45, p.size * 2.45, 128, 1);
+        const pos = ringGeo.attributes.position;
+        const uv = ringGeo.attributes.uv;
+        const v3 = new THREE.Vector3();
+        for (let i = 0; i < pos.count; i++) {
+          v3.fromBufferAttribute(pos, i);
+          const r = v3.length();
+          const u = (r - p.size * 1.45) / (p.size * 2.45 - p.size * 1.45);
+          uv.setXY(i, u, 0.5);
+        }
+        const ringMat = new THREE.MeshBasicMaterial({
+          map: ringTex, transparent: true, side: THREE.DoubleSide,
+          depthWrite: false, opacity: 0.85
+        });
+        const rings = new THREE.Mesh(ringGeo, ringMat);
+        rings.rotation.x = Math.PI / 2 - 0.22;
+        planet.add(rings);
+      }
+
+      // Faint orbit ring — like a clock face guide
+      const orbitPoints = [];
+      const orbitSeg = 128;
+      for (let s = 0; s <= orbitSeg; s++) {
+        const a = (s / orbitSeg) * Math.PI * 2;
+        orbitPoints.push(new THREE.Vector3(Math.cos(a) * p.dist, 0, Math.sin(a) * p.dist));
+      }
+      const orbitGeo = new THREE.BufferGeometry().setFromPoints(orbitPoints);
+      const orbitMat = new THREE.LineBasicMaterial({
+        color: 0xc4baa2,
+        transparent: true,
+        opacity: 0.12
+      });
+      const orbit = new THREE.LineLoop(orbitGeo, orbitMat);
+      orbit.rotation.x = p.tilt;
+      threeScene.add(orbit);
+    });
+
+    // Far cosmos starfield — adaptive count based on device
+    const _mobile = window.innerWidth <= 880;
+    const starsCount = _mobile ? 4500 : 14000;
+    const starsGeo = new THREE.BufferGeometry();
+    const starsPos = new Float32Array(starsCount * 3);
+    const starsColors = new Float32Array(starsCount * 3);
+    const starsSizes = new Float32Array(starsCount);
+    for (let i = 0; i < starsCount; i++) {
+      const phi = Math.random() * Math.PI * 2;
+      const theta = Math.acos(2 * Math.random() - 1);
+      const r = 40 + Math.random() * 50;
+      starsPos[i*3+0] = r * Math.sin(theta) * Math.cos(phi);
+      starsPos[i*3+1] = r * Math.sin(theta) * Math.sin(phi);
+      starsPos[i*3+2] = r * Math.cos(theta);
+      // Color variety — mostly aged ivory, some blue-white, some warm
+      const tone = Math.random();
+      if (tone < 0.65) { // ivory
+        starsColors[i*3+0] = 0.95; starsColors[i*3+1] = 0.90; starsColors[i*3+2] = 0.78;
+      } else if (tone < 0.85) { // cool blue-white
+        starsColors[i*3+0] = 0.75; starsColors[i*3+1] = 0.85; starsColors[i*3+2] = 1.0;
+      } else { // warm orange
+        starsColors[i*3+0] = 1.0; starsColors[i*3+1] = 0.78; starsColors[i*3+2] = 0.50;
+      }
+      // Size distribution — many small, several large bright "anchor" stars
+      const r2 = Math.random();
+      starsSizes[i] = r2 < 0.55 ? 0.08 + Math.random() * 0.14
+                  : r2 < 0.82 ? 0.22 + Math.random() * 0.28
+                  : r2 < 0.95 ? 0.55 + Math.random() * 0.45
+                  : 1.20 + Math.random() * 0.90;
+    }
+    starsGeo.setAttribute('position', new THREE.BufferAttribute(starsPos, 3));
+    starsGeo.setAttribute('color', new THREE.BufferAttribute(starsColors, 3));
+    starsGeo.setAttribute('aSize', new THREE.BufferAttribute(starsSizes, 1));
+
+    // Star sprite texture — soft round
+    const starSpriteTex = (function() {
+      const c = document.createElement('canvas');
+      c.width = c.height = 64;
+      const ctx = c.getContext('2d');
+      const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+      g.addColorStop(0, 'rgba(255,255,255,1)');
+      g.addColorStop(0.35, 'rgba(255,255,255,0.55)');
+      g.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, 64, 64);
+      return new THREE.CanvasTexture(c);
+    })();
+
+    const starsMat = new THREE.ShaderMaterial({
+      uniforms: {
+        uTex: { value: starSpriteTex },
+        uPxRatio: { value: window.devicePixelRatio || 1 },
+        uTime: { value: 0 }
+      },
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      vertexShader: `
+        attribute float aSize;
+        attribute vec3 color;
+        varying vec3 vColor;
+        varying float vSeed;
+        uniform float uTime;
+        uniform float uPxRatio;
+        void main() {
+          vColor = color;
+          vSeed = position.x * 0.13 + position.y * 0.27;
+          vec4 mv = modelViewMatrix * vec4(position, 1.0);
+          gl_PointSize = aSize * 420.0 * uPxRatio / -mv.z;
+          gl_Position = projectionMatrix * mv;
+        }
+      `,
+      fragmentShader: `
+        uniform sampler2D uTex;
+        uniform float uTime;
+        varying vec3 vColor;
+        varying float vSeed;
+        void main() {
+          vec4 t = texture2D(uTex, gl_PointCoord);
+          if (t.a < 0.02) discard;
+          // Twinkle
+          float twinkle = 0.7 + 0.3 * sin(uTime * 2.0 + vSeed * 6.28);
+          gl_FragColor = vec4(vColor, 1.0) * t.a * twinkle;
+        }
+      `
+    });
+    const stars = new THREE.Points(starsGeo, starsMat);
+    threeScene.add(stars);
+    window.__aiqStars = stars;
+    window.__aiqStarsMat = starsMat;
+
+    // Mid-distance dust — slow upward drift
+    const dustCount = _mobile ? 120 : 320;
+    window.__aiqDustCount = dustCount;
+    const dustGeo = new THREE.BufferGeometry();
+    const dustPos = new Float32Array(dustCount * 3);
+    for (let i = 0; i < dustCount; i++) {
+      dustPos[i*3+0] = (Math.random() - 0.5) * 26;
+      dustPos[i*3+1] = (Math.random() - 0.5) * 16;
+      dustPos[i*3+2] = (Math.random() - 0.5) * 20 - 1;
+    }
+    dustGeo.setAttribute('position', new THREE.BufferAttribute(dustPos, 3));
+    const dustMat = new THREE.PointsMaterial({
+      color: 0x9c8458, size: 0.035,
+      transparent: true, opacity: 0.55,
+      blending: THREE.AdditiveBlending, depthWrite: false
+    });
+    const dust = new THREE.Points(dustGeo, dustMat);
+    threeScene.add(dust);
+    window.__aiqDust = { mesh: dust, positions: dustPos, baseY: dustPos.slice() };
+
+    // ===== METEOR system — occasional bright streaks across the cosmos =====
+    const meteorPool = [];
+    const meteorCount = 6;
+    for (let i = 0; i < meteorCount; i++) {
+      const meteorGeo = new THREE.BufferGeometry();
+      const meteorPos = new Float32Array(2 * 3);
+      meteorGeo.setAttribute('position', new THREE.BufferAttribute(meteorPos, 3));
+      const meteorMat = new THREE.LineBasicMaterial({
+        color: i % 3 === 0 ? 0xffe6ba : i % 3 === 1 ? 0xfff4d4 : 0xd6b88a,
+        transparent: true, opacity: 0,
+        blending: THREE.AdditiveBlending, linewidth: 2
+      });
+      const meteor = new THREE.Line(meteorGeo, meteorMat);
+      meteor.userData = {
+        active: false,
+        startT: 0,
+        duration: 0,
+        sx: 0, sy: 0, sz: 0,
+        dx: 0, dy: 0, dz: 0,
+        positions: meteorPos
+      };
+      threeScene.add(meteor);
+      meteorPool.push(meteor);
+    }
+    window.__aiqMeteors = meteorPool;
+    // Pre-launch 3 staggered meteors so they appear on first paint
+    meteorPool.slice(0, 3).forEach((m, i) => {
+      const u = m.userData;
+      u.active = true;
+      u.startT = -0.5 + i * 0.4;
+      u.duration = 1.4 + i * 0.4;
+      const ang = i * 1.7;
+      u.sx = Math.cos(ang) * 28;
+      u.sy = (i % 2 === 0 ? 4 : -3) + i * 1.5;
+      u.sz = Math.sin(ang) * 28;
+      u.dx = -Math.cos(ang) * (12 + i * 4);
+      u.dy = (Math.random() - 0.5) * 4;
+      u.dz = -Math.sin(ang) * (12 + i * 4);
+    });
+
+    // Subtle nebula glow — radial sprite far away
+    const nebulaTex = (function() {
+      const c = document.createElement('canvas');
+      c.width = c.height = 256;
+      const ctx = c.getContext('2d');
+      const g = ctx.createRadialGradient(128, 128, 0, 128, 128, 128);
+      g.addColorStop(0, 'rgba(156, 132, 88, 0.45)');
+      g.addColorStop(0.4, 'rgba(74, 80, 72, 0.15)');
+      g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, 256, 256);
+      return new THREE.CanvasTexture(c);
+    })();
+    const nebulaMat = new THREE.SpriteMaterial({ map: nebulaTex, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false });
+    const nebula = new THREE.Sprite(nebulaMat);
+    nebula.scale.set(40, 40, 1);
+    nebula.position.set(-6, 4, -20);
+    threeScene.add(nebula);
+    const nebula2 = new THREE.Sprite(nebulaMat.clone());
+    nebula2.material.opacity = 0.4;
+    nebula2.scale.set(34, 34, 1);
+    nebula2.position.set(8, -3, -22);
+    threeScene.add(nebula2);
+  }
+
+  function updateThree(s, t) {
+    if (!threeRenderer) return;
+    // SUN — slow rotation, gentle pulse
+    brain.rotation.y = t * 0.08;
+    brain.rotation.x = t * 0.03;
+    const pulse = 1.0 + Math.sin(t * 0.5) * 0.018;
+    brain.scale.set(pulse, pulse, pulse);
+
+    // Corona — pulses with sun
+    const c1 = window.__aiqCorona;
+    if (c1) {
+      const cp = 5.4 + Math.sin(t * 0.4) * 0.25;
+      c1.scale.set(cp, cp, 1);
+    }
+    const c2 = window.__aiqCoronaInner;
+    if (c2) {
+      const cp = 2.5 + Math.sin(t * 0.7) * 0.18;
+      c2.scale.set(cp, cp, 1);
+    }
+    // Lens flares — drift slightly off camera axis
+    const flares = window.__aiqFlares;
+    if (flares) {
+      flares.forEach((f, i) => {
+        const offset = (i + 1) * 0.3;
+        const camDir = new THREE.Vector3().subVectors(threeCam.position, new THREE.Vector3(0,0,0)).normalize();
+        f.position.copy(camDir).multiplyScalar(-offset);
+      });
+    }
+
+    // PLANETS — proper Keplerian orbit (constant angular velocity here for visual)
+    satellites.forEach((p, i) => {
+      const u = p.userData;
+      u.ang += u.speed * 0.005;
+      const x = Math.cos(u.ang) * u.dist;
+      const z = Math.sin(u.ang) * u.dist;
+      // tilt orbital plane around X axis
+      const y = Math.sin(u.ang) * u.dist * u.tilt;
+      p.position.set(x, y, z);
+      p.rotation.y = t * u.spin;
+    });
+
+    // Moon orbits Earth
+    const moon = window.__aiqMoon;
+    if (moon && moon.userData.moonOf) {
+      moon.userData.ang += moon.userData.speed * 0.005;
+      const mEarth = moon.userData.moonOf;
+      moon.position.set(
+        mEarth.position.x + Math.cos(moon.userData.ang) * moon.userData.dist,
+        mEarth.position.y,
+        mEarth.position.z + Math.sin(moon.userData.ang) * moon.userData.dist
+      );
+      moon.rotation.y = t * 0.4;
+    }
+
+    // Update star twinkle uniform
+    if (window.__aiqStarsMat) window.__aiqStarsMat.uniforms.uTime.value = t;
+
+    // ===== Meteors — random launches every ~3-6 seconds =====
+    const meteors = window.__aiqMeteors;
+    if (meteors) {
+      for (const m of meteors) {
+        const u = m.userData;
+        if (!u.active) {
+          // Random chance to fire (per frame, low odds — averages every few seconds)
+          if (Math.random() < 0.008) {
+            u.active = true;
+            u.startT = t;
+            u.duration = 0.8 + Math.random() * 0.6;
+            // Random start position somewhere in cosmos
+            const ang = Math.random() * Math.PI * 2;
+            const heightVar = (Math.random() - 0.5) * 30;
+            const distFromCenter = 25 + Math.random() * 15;
+            u.sx = Math.cos(ang) * distFromCenter;
+            u.sy = heightVar;
+            u.sz = Math.sin(ang) * distFromCenter;
+            // Direction — roughly toward camera region with random spread
+            const dirAng = ang + Math.PI + (Math.random() - 0.5) * 0.6;
+            const length = 12 + Math.random() * 8;
+            u.dx = Math.cos(dirAng) * length;
+            u.dy = (Math.random() - 0.5) * 6;
+            u.dz = Math.sin(dirAng) * length;
+          }
+        } else {
+          const elapsed = t - u.startT;
+          const prog = elapsed / u.duration;
+          if (prog >= 1) {
+            u.active = false;
+            m.material.opacity = 0;
+          } else {
+            // Head position
+            const hx = u.sx + u.dx * prog;
+            const hy = u.sy + u.dy * prog;
+            const hz = u.sz + u.dz * prog;
+            // Tail trails behind based on speed
+            const trailLen = 1.6;
+            const tx = hx - u.dx * 0.05 * trailLen;
+            const ty = hy - u.dy * 0.05 * trailLen;
+            const tz = hz - u.dz * 0.05 * trailLen;
+            u.positions[0] = tx; u.positions[1] = ty; u.positions[2] = tz;
+            u.positions[3] = hx; u.positions[4] = hy; u.positions[5] = hz;
+            m.geometry.attributes.position.needsUpdate = true;
+            // Fade in/out — bright in middle
+            const fade = prog < 0.15 ? prog / 0.15
+                      : prog > 0.75 ? (1 - prog) / 0.25
+                      : 1.0;
+            m.material.opacity = fade * 0.95;
+          }
+        }
+      }
+    }
+
+    // Mid-distance dust — slow upward drift, wraps around
+    const d = window.__aiqDust;
+    if (d) {
+      for (let i = 0; i < window.__aiqDustCount; i++) {
+        const py = d.baseY[i*3+1] + ((t * 0.1 + i * 0.27) % 12) - 6;
+        d.positions[i*3+1] = py;
+      }
+      d.mesh.geometry.attributes.position.needsUpdate = true;
+    }
+
+    // Slow starfield rotation — gives "cosmos" feel
+    if (window.__aiqStars) {
+      window.__aiqStars.rotation.y = t * 0.008;
+      window.__aiqStars.rotation.x = t * 0.004;
+    }
+
+    // Camera — sweeps full 360° (2π) across scroll, easing so start = end
+    const sEase = s < 1 ? 0.5 - Math.cos(s * Math.PI) * 0.5 : 1;
+    const orbit = sEase * Math.PI * 2;
+    const radius = 28 - s * 6;
+    const yHigh = 24, yLow = 4;
+    let camY;
+    if (s < 0.5) camY = yHigh - (s / 0.5) * (yHigh - yLow);
+    else camY = yLow + ((s - 0.5) / 0.5) * 6;
+    threeCam.position.x = Math.sin(orbit) * radius;
+    threeCam.position.z = Math.cos(orbit) * radius;
+    threeCam.position.y = camY + Math.sin(t * 0.10) * 0.3;
+    threeCam.lookAt(0, 0, 0);
+
+    // Fade: visible at start, off through museum, returns at end
+    let alpha;
+    if (s < 0.045) alpha = 1.0;
+    else if (s < 0.090) alpha = 1.0 - ((s - 0.045) / 0.045);
+    else if (s < 0.92)  alpha = 0;
+    else if (s < 0.96)  alpha = (s - 0.92) / 0.04;
+    else alpha = 1.0;
+
+    canvas.style.opacity = alpha.toFixed(3);
+    threeRenderer.render(threeScene, threeCam);
+  }
+
+  if (typeof THREE !== 'undefined') {
+    initThree();
+    window.addEventListener('resize', () => {
+      if (!threeRenderer) return;
+      threeRenderer.setSize(window.innerWidth, window.innerHeight, false);
+      threeCam.aspect = window.innerWidth / window.innerHeight;
+      threeCam.updateProjectionMatrix();
+    });
+  }
+
+  // ===== Image preload + fallback =====
+  const frames = document.querySelectorAll('.frame');
+  let imgsLoaded = 0;
+  const totalImgs = frames.length;
+
+  frames.forEach((frame, i) => {
+    const bg = frame.querySelector('.frame__bg');
+    const src = bg.getAttribute('data-src');
+    if (!src) { imgsLoaded++; return; }
+    const img = new Image();
+    img.onload = () => {
+      bg.style.backgroundImage = `url("${src}")`;
+      imgsLoaded++;
+    };
+    img.onerror = () => {
+      // Silent fallback to CSS color
+      imgsLoaded++;
+    };
+    img.src = src;
+  });
+
+  // ===== Loader =====
+  const loader = document.getElementById('loader');
+  const loaderBar = document.querySelector('.loader__bar');
+  const loaderNum = document.getElementById('loaderNum');
+  const NUMERALS = ["I","II","III","IV","V","VI"];
+  const NAMES = ["TODAY","FLORENCE · 1450","THE MASTERS","THE RENAISSANCE","THE BRAIN","THE INVITATION"];
+  let loaderProgress = 0;
+  function tickLoader() {
+    const imgPct = totalImgs > 0 ? imgsLoaded / totalImgs : 1;
+    const target = Math.min(100, imgPct * 100 + 5);
+    loaderProgress = Math.min(target, loaderProgress + 3 + Math.random()*4);
+    loaderBar.style.setProperty('--p', (loaderProgress / 100).toFixed(3));
+    const numIdx = Math.min(5, Math.floor((loaderProgress / 100) * 6));
+    loaderNum.textContent = NUMERALS[numIdx] + ' · ' + NAMES[numIdx];
+    if (loaderProgress >= 100 && imgPct >= 0.6) {
+      loader.classList.add('done');
+      setTimeout(() => loader.style.display = 'none', 1500);
+      return;
+    }
+    setTimeout(tickLoader, 100);
+  }
+  setTimeout(tickLoader, 200);
+
+  // ===== Scroll =====
+  let scroll = 0, scrollTarget = 0;
+  function updateScrollFromWindow() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    scrollTarget = Math.max(0, Math.min(1, window.scrollY / max));
+  }
+  window.addEventListener('scroll', updateScrollFromWindow, { passive: true });
+  updateScrollFromWindow();
+
+  // ===== Frame opacity logic =====
+  const sceneEls = document.querySelectorAll('.scene');
+  function smoothBand(x, a, b, c, d) {
+    if (x <= a || x >= d) return 0;
+    if (x < b) { const t = (x - a) / (b - a); return t*t*(3-2*t); }
+    if (x <= c) return 1;
+    const t = 1 - (x - c) / (d - c);
+    return t*t*(3-2*t);
+  }
+
+  // Get current act index for HUD
+  function getActIndex(s) {
+    if (s < 0.11) return 0;
+    if (s < 0.17) return 1;
+    if (s < 0.65) return 2;
+    if (s < 0.72) return 3;
+    if (s < 0.92) return 4;
+    return 5;
+  }
+
+  // ===== Render loop =====
+  const hudEl = document.getElementById('hud');
+  const hudNum = document.getElementById('hudNum');
+  const hudName = document.getElementById('hudName');
+  const progressEl = document.getElementById('progress');
+  const progressFill = document.getElementById('progressFill');
+  const topbarEl = document.getElementById('topbar');
+  const soundEl = document.getElementById('sound');
+
+  // Frames + nameplate logic — show for EVERY frame (not just masters)
+  const allFrames = Array.from(document.querySelectorAll('.frame'));
+  const nameplate = document.getElementById('nameplate');
+  const npName = document.getElementById('npName');
+  const npLife = document.getElementById('npLife');
+  const npWork = document.getElementById('npWork');
+  let lastNameplateName = null;
+  function updateNameplate(s) {
+    let active = null;
+    let bestAlpha = 0;
+    for (const f of allFrames) {
+      const from = parseFloat(f.dataset.from);
+      const to = parseFloat(f.dataset.to);
+      const fadeIn = (to - from) * 0.2;
+      const fadeOut = (to - from) * 0.25;
+      let a;
+      if (s <= from || s >= to) a = 0;
+      else if (s < from + fadeIn) a = (s - from) / fadeIn;
+      else if (s > to - fadeOut) a = (to - s) / fadeOut;
+      else a = 1;
+      if (a > bestAlpha && f.dataset.master) {
+        bestAlpha = a;
+        active = f;
+      }
+    }
+    if (active) {
+      const name = active.dataset.master;
+      if (lastNameplateName !== name) {
+        lastNameplateName = name;
+        npName.textContent = name;
+        npLife.textContent = active.dataset.life || '';
+        npWork.textContent = (active.dataset.work || '') + ' · The Metropolitan Museum of Art';
+      }
+      if (!nameplate.classList.contains('is-on')) nameplate.classList.add('is-on');
+    } else {
+      if (nameplate.classList.contains('is-on')) {
+        nameplate.classList.remove('is-on');
+        lastNameplateName = null;
+      }
+    }
+  }
+
+  let lastT = performance.now();
+  let hidden = false;
+  document.addEventListener('visibilitychange', () => { hidden = document.hidden; });
+
+  function frame(now) {
+    requestAnimationFrame(frame);
+    if (hidden) return;
+    const dt = Math.min(0.05, (now - lastT) / 1000);
+    lastT = now;
+
+    scroll += (scrollTarget - scroll) * Math.min(1, dt * 2.5);
+    const s = scroll;
+
+    // Update frame opacities and 3D camera transforms
+    frames.forEach((f) => {
+      const from = parseFloat(f.dataset.from);
+      const to = parseFloat(f.dataset.to);
+      const fadeIn = (to - from) * 0.25;
+      const fadeOut = (to - from) * 0.30;
+      const alpha = smoothBand(s, from, from + fadeIn, to - fadeOut, to);
+      f.style.opacity = alpha.toFixed(3);
+      const center = (from + to) / 2;
+      const localT = (s - center) / ((to - from) * 0.5);
+      const bg = f.firstElementChild;
+      if (alpha > 0.001) {
+        const dist = Math.abs(localT);
+        const tz = -dist * 320;
+        const ry = localT * -10;
+        const sc = 0.92 + (1 - dist) * 0.10;
+        const tx = localT * -24;
+        bg.style.transform = `translate3d(${tx}px, 0, ${tz}px) rotateY(${ry}deg) scale(${sc})`;
+      }
+    });
+
+    // Ambient ornament — slowly rotates 720° across the full journey + slight Y tilt
+    const threeT = now * 0.001;
+    updateThree(s, threeT);
+
+    // Scenes — fade in/out
+    sceneEls.forEach((sc) => {
+      const from = parseFloat(sc.dataset.from);
+      const to = parseFloat(sc.dataset.to);
+      const on = s >= from && s <= to;
+      if (sc.classList.contains('is-on') !== on) sc.classList.toggle('is-on', on);
+    });
+
+    // Nameplate — show only when an active master frame is visible
+    updateNameplate(s);
+
+    // HUD + progress
+    const actIdx = getActIndex(s);
+    if (hudNum.textContent !== NUMERALS[actIdx]) hudNum.textContent = NUMERALS[actIdx];
+    if (hudName.textContent !== NAMES[actIdx]) hudName.textContent = NAMES[actIdx];
+    progressFill.style.transform = 'scaleY(' + s.toFixed(4) + ')';
+  }
+  requestAnimationFrame(frame);
+
+  // ===== INDEX overlay =====
+  const indexBtn = document.getElementById('indexBtn');
+  const indexPanel = document.getElementById('indexPanel');
+  const indexEsc = document.getElementById('indexEsc');
+  indexBtn.addEventListener('click', () => indexPanel.classList.add('is-on'));
+  indexEsc.addEventListener('click', () => indexPanel.classList.remove('is-on'));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') indexPanel.classList.remove('is-on');
+  });
+  document.querySelectorAll('.index-panel__item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const t = parseFloat(btn.dataset.target);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      window.scrollTo({ top: t * max, behavior: 'smooth' });
+      indexPanel.classList.remove('is-on');
+    });
+  });
+
+  // ===== Cursor =====
+  const cdot = document.querySelector('.cursor-dot');
+  const cring = document.querySelector('.cursor-ring');
+  if (cdot && cring) {
+    let mx = innerWidth/2, my = innerHeight/2, rx = mx, ry = my;
+    addEventListener('mousemove', (e) => {
+      mx = e.clientX; my = e.clientY;
+      cdot.style.transform = `translate(${mx}px, ${my}px) translate(-50%,-50%)`;
+    });
+    function cursorLoop() {
+      rx += (mx - rx) * 0.18;
+      ry += (my - ry) * 0.18;
+      cring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`;
+      requestAnimationFrame(cursorLoop);
+    }
+    cursorLoop();
+  }
+
+  // ===== Music — Satie-style salon piano synth =====
+  // Slow, melancholic, "chic" — Gymnopédie-inspired chord progression.
+  // Soft sine waves with very gentle reverb, no church organ feel.
+  let audioCtx = null, masterGain = null, themeOn = false, themeTimer = null;
+  const NOTE = {
+    "G1": 49.00, "A1": 55.00, "D2": 73.42, "F#2": 92.50, "G2": 98.00, "A2": 110.00, "B2": 123.47,
+    "D3": 146.83, "F#3": 185.00, "G3": 196.00, "A3": 220.00, "B3": 246.94, "C4": 261.63,
+    "D4": 293.66, "E4": 329.63, "F#4": 369.99, "G4": 392.00, "A4": 440.00, "B4": 493.88, "D5": 587.33
+  };
+  // Gymnopédie-1-inspired: GM7 / D | GM7 / D | (then darker variants)
+  const PROGRESSION = [
+    { bass: "G2", chord: ["B3", "D4", "F#4"], melody: ["G4", null, "F#4", null] },
+    { bass: "D2", chord: ["F#3", "A3", "D4"], melody: ["A4", null, "G4", null] },
+    { bass: "G2", chord: ["B3", "D4", "F#4"], melody: ["B4", null, "A4", null] },
+    { bass: "B2", chord: ["D4", "F#4", "B4"], melody: ["D5", null, "B4", null] },
+    { bass: "A2", chord: ["C4", "E4", "A4"], melody: ["E4", null, "C4", null] },
+    { bass: "D2", chord: ["F#3", "A3", "D4"], melody: ["F#4", null, "D4", null] }
+  ];
+  const STEP_S = 6.0; // seconds per chord
+
+  function playPianoNote(freq, when, dur, peak) {
+    const ctx = audioCtx;
+    const o1 = ctx.createOscillator(); o1.type = "sine"; o1.frequency.value = freq;
+    const o2 = ctx.createOscillator(); o2.type = "sine"; o2.frequency.value = freq * 2.0;
+    const o3 = ctx.createOscillator(); o3.type = "sine"; o3.frequency.value = freq * 3.0;
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0.00001, when);
+    // Piano-like envelope: very fast attack, exponential decay
+    g.gain.exponentialRampToValueAtTime(peak, when + 0.015);
+    g.gain.exponentialRampToValueAtTime(peak * 0.4, when + 0.4);
+    g.gain.exponentialRampToValueAtTime(0.00001, when + dur);
+    const m1 = ctx.createGain(); m1.gain.value = 0.65;
+    const m2 = ctx.createGain(); m2.gain.value = 0.20;
+    const m3 = ctx.createGain(); m3.gain.value = 0.05;
+    o1.connect(m1).connect(g);
+    o2.connect(m2).connect(g);
+    o3.connect(m3).connect(g);
+    g.connect(masterGain);
+    o1.start(when); o2.start(when); o3.start(when);
+    o1.stop(when + dur + 0.05);
+    o2.stop(when + dur + 0.05);
+    o3.stop(when + dur + 0.05);
+  }
+
+  function scheduleBar(barIdx) {
+    const bar = PROGRESSION[barIdx % PROGRESSION.length];
+    const baseT = audioCtx.currentTime + 0.05;
+    // Bass note — long, sustained
+    playPianoNote(NOTE[bar.bass], baseT, STEP_S * 1.1, 0.07);
+    // Chord — strummed slightly
+    bar.chord.forEach((n, i) => {
+      playPianoNote(NOTE[n], baseT + 0.04 * i, STEP_S * 1.05, 0.035);
+    });
+    // Melody — appears on beats 1 and 3
+    bar.melody.forEach((n, i) => {
+      if (!n) return;
+      playPianoNote(NOTE[n], baseT + (STEP_S / 4) * i, STEP_S / 3, 0.05);
+    });
+  }
+
+  function startTheme() {
+    if (themeOn) return;
+    try {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        masterGain = audioCtx.createGain();
+        masterGain.gain.value = 0.0;
+        // Subtle hall reverb via feedback delay — kept gentle, not churchy
+        const delay = audioCtx.createDelay(1.0);
+        delay.delayTime.value = 0.18;
+        const fb = audioCtx.createGain(); fb.gain.value = 0.18;
+        const wet = audioCtx.createGain(); wet.gain.value = 0.22;
+        const lp = audioCtx.createBiquadFilter();
+        lp.type = "lowpass";
+        lp.frequency.value = 2400;
+        lp.Q.value = 0.4;
+        masterGain.connect(lp);
+        lp.connect(audioCtx.destination);
+        lp.connect(delay);
+        delay.connect(fb).connect(delay);
+        delay.connect(wet).connect(audioCtx.destination);
+      }
+      themeOn = true;
+      masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
+      masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
+      masterGain.gain.linearRampToValueAtTime(0.9, audioCtx.currentTime + 1.5);
+      let barIdx = 0;
+      function loop() {
+        if (!themeOn) return;
+        scheduleBar(barIdx++);
+        themeTimer = setTimeout(loop, STEP_S * 1000);
+      }
+      loop();
+    } catch (e) {}
+  }
+  function stopTheme() {
+    if (!themeOn) return;
+    themeOn = false;
+    if (themeTimer) { clearTimeout(themeTimer); themeTimer = null; }
+    if (masterGain) {
+      masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
+      masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
+      masterGain.gain.linearRampToValueAtTime(0.0, audioCtx.currentTime + 1.2);
+    }
+  }
+  // Service worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+  }
+
+  soundEl.addEventListener('click', () => {
+    const on = soundEl.dataset.on === 'true';
+    if (on) {
+      soundEl.dataset.on = 'false';
+      soundEl.querySelector('.sound__label').textContent = 'SOUND OFF';
+      stopTheme();
+    } else {
+      soundEl.dataset.on = 'true';
+      soundEl.querySelector('.sound__label').textContent = 'SOUND ON';
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      startTheme();
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
