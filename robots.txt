@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /uploads/
-
-Sitemap: https://ghuser03.github.io/Aiq-Studio-A/sitemap.xml
